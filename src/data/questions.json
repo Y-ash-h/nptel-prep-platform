@@ -1621,12 +1621,12 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 9,
-      "question": "For every real matrix A ∈ R^(m×n), the matrices A^T A and A A^T have exactly the same eigenvalues.",
+      "question": "For every real matrix $A \\in \\mathbb{R}^{m \\times n}$, the matrices $A^T A$ and $A A^T$ have exactly the same eigenvalues.",
       "options": [
         "True",
         "False"
       ],
-      "correct_answer": 1,
+      "correct_answer": "False",
       "correct_letter": "B",
       "detailed_solution": "False. The matrices A^T A and A A^T have the same non-zero eigenvalues, but they may have different numbers of zero eigenvalues since their dimensions (n×n vs m×m) can differ when m != n.",
       "image": null
@@ -1637,14 +1637,14 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 10,
-      "question": "A reflection matrix in R^n is given by R = I - 2 v v^T, where v is a unit vector. If the vector v itself is reflected by R, by what factor is it scaled?",
+      "question": "A reflection matrix in $\\mathbb{R}^n$ is given by $R = I - 2vv^T$, where $v$ is a unit vector. If the vector $v$ itself is reflected by $R$, by what factor is it scaled?",
       "options": [
         "1",
         "-1",
         "2",
         "-2"
       ],
-      "correct_answer": 1,
+      "correct_answer": "-1",
       "correct_letter": "B",
       "detailed_solution": "R v = (I - 2 v v^T) v = v - 2 v (v^T v). Since v is a unit vector, v^T v = 1. Thus R v = v - 2 v = -v = (-1) v. Hence it is scaled by -1.",
       "image": null
@@ -1655,14 +1655,14 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 11,
-      "question": "Let M be a 4 × 4 matrix with real values, and let x ∈ R^4 be a non-zero vector. What can we say about the vectors x, M x, M^2 x, M^3 x, and M^4 x?",
+      "question": "Let $M$ be a $4 \\times 4$ matrix with real values, and let $x \\in \\mathbb{R}^4$ be a non-zero vector. What can we say about the vectors $x, Mx, M^2x, M^3x$, and $M^4x$?",
       "options": [
         "Linearly independent",
         "Linearly dependent",
-        "Linearly independent iff M is a symmetric matrix",
+        "Linearly independent iff $M$ is a symmetric matrix",
         "Cannot be determined."
       ],
-      "correct_answer": 1,
+      "correct_answer": "Linearly dependent",
       "correct_letter": "B",
       "detailed_solution": "In R^4, the maximum number of linearly independent vectors is 4. Here we have 5 vectors in a 4-dimensional space, so they must be linearly dependent.",
       "image": null
@@ -1691,14 +1691,14 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 13,
-      "question": "Let X ∈ R^(n×d) be a mean-centered data matrix. Suppose you perform PCA by computing the eigenvectors of the covariance matrix and select the top k eigenvectors to form the projection matrix E ∈ R^(d×k). You obtain the lower-dimensional representation of the data as: Y = X E. Which of the following statements is correct regarding the ability to reconstruct X from Y?",
+      "question": "Let $X \\in \\mathbb{R}^{n \\times d}$ be a mean-centered data matrix. Suppose you perform PCA by computing the eigenvectors of the covariance matrix and select the top $k$ eigenvectors to form the projection matrix $E \\in \\mathbb{R}^{d \\times k}$. You obtain the lower-dimensional representation as $Y = XE$. Which of the following statements is correct regarding the ability to reconstruct $X$ from $Y$?",
       "options": [
-        "X can never be recovered from Y.",
-        "X can always be recovered from Y.",
-        "X can be exactly recovered from Y only if all d eigenvectors are used in E.",
-        "X can be recovered even when only the top k < d eigenvectors are used."
+        "$X$ can never be recovered from $Y$.",
+        "$X$ can always be recovered from $Y$.",
+        "$X$ can be exactly recovered from $Y$ only if all $d$ eigenvectors are used in $E$.",
+        "$X$ can be recovered even when only the top $k < d$ eigenvectors are used."
       ],
-      "correct_answer": 2,
+      "correct_answer": "$X$ can be exactly recovered from $Y$ only if all $d$ eigenvectors are used in $E$.",
       "correct_letter": "C",
       "detailed_solution": "Exact reconstruction X = Y E^T requires E to form a full orthonormal basis for R^d, which happens when all d eigenvectors are retained.",
       "image": null
@@ -2069,14 +2069,14 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 14,
-      "question": "The charging principle of the Misra-Gries algorithm can be generalized from scalar frequency\ntracking to matrix streams. Suppose rowsa t∈Rdarrive forming a matrixA∈Rm×d. A\nsketchB∈Rk×dis maintained to approximateATA.\nWhenBis full, the matrix analogue of the Misra-Gries ”decrement all counters” step is\nperformed using an SVD-based shrinkage.\nWhich operation correctly corresponds to this scalar decrement step?",
+      "question": "The charging principle of the Misra-Gries algorithm can be generalized from scalar frequency tracking to matrix streams. Suppose rows $a_t \\in \\mathbb{R}^d$ arrive forming a matrix $A \\in \\mathbb{R}^{m \\times d}$. A sketch $B \\in \\mathbb{R}^{k \\times d}$ is maintained to approximate $A^T A$. When $B$ is full, the matrix analogue of the Misra-Gries \"decrement all counters\" step is performed using an SVD-based shrinkage. Which operation correctly corresponds to this scalar decrement step?",
       "options": [
-        "Subtractingσ 1IfromBTB",
-        "Computing SVDB=UΣVT, then setting Σ2←Σ2−σ2\nkIand reconstructing",
-        "Dropping the first column ofB",
-        "MultiplyingBby a random matrixR"
+        "Subtracting $\\sigma_1 I$ from $B^T B$",
+        "Computing SVD $B = U\\Sigma V^T$, then setting $\\Sigma^2 \\leftarrow \\Sigma^2 - \\sigma_k^2 I$ and reconstructing",
+        "Dropping the first column of $B$",
+        "Multiplying $B$ by a random matrix $R$"
       ],
-      "correct_answer": 1,
+      "correct_answer": "Computing SVD $B = U\\Sigma V^T$, then setting $\\Sigma^2 \\leftarrow \\Sigma^2 - \\sigma_k^2 I$ and reconstructing",
       "correct_letter": "B",
       "detailed_solution": "In Misra-Gries, a full sketch performs aglobal decrementthat reduces\nall counters uniformly while preserving relative structure.\nIn the matrix setting, this corresponds to removing uniform energy across all directions.\nUsing SVD:\nB=UΣVT\nwe identify the weakest direction via the smallest singular valueσ k.\nWe then perform:\nΣ2←Σ2−σ2\nkI\nand reconstructBfrom the shrunk spectrum.\nThis ensures:\n∥ATA−BTB∥Fremains bounded\nThus, this SVD-based shrinkage is the direct analogue of the Misra-Gries collective decrement\nstep.\n5",
       "image": null
@@ -2569,14 +2569,14 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 2,
-      "question": "LetHddenote the d×d Hadamard matrix, and let x∈Rd. Consider the transformed vector\ny=H dx. Which of the following statements is necessarily true?",
+      "question": "Let $H_d$ denote the $d \\times d$ Hadamard matrix, and let $x \\in \\mathbb{R}^d$. Consider the transformed vector $y = H_d x$. Which of the following statements is necessarily true?",
       "options": [
-        "The vectoryis always dense, regardless ofx.",
-        "Ifxis dense, thenyis sparse.",
-        "Multiplication by Hdalone leaves xunchanged; a random diagonal matrix Dis required\nfor any effect.",
-        "No general conclusion about the sparsity pattern ofycan be made."
+        "The vector $y$ is always dense, regardless of $x$.",
+        "If $x$ is dense, then $y$ is sparse.",
+        "Multiplication by $H_d$ alone leaves $x$ unchanged; a random diagonal matrix $D$ is required for any effect.",
+        "No general conclusion about the sparsity pattern of $y$ can be made."
       ],
-      "correct_answer": 3,
+      "correct_answer": "No general conclusion about the sparsity pattern of $y$ can be made.",
       "correct_letter": "D",
       "detailed_solution": "Multiplication by a Hadamard matrix mixes the coordinates of x, but\nwhether the result is sparse or dense depends on the structure ofx.",
       "image": null
@@ -2657,14 +2657,14 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 7,
-      "question": "LetAbe a matrix with mrows and ncolumns. Your goal is to pick a subset of columns of A.\nYour friend gives you a matrix Sand says that if you multiply Awith S(i.e. you calculate\nAS) you will get a subset of ccolumns of matrix A. What do you think the structure of\nmatrixSshould be? You do not want any scaling of the columns.",
+      "question": "Let $A$ be a matrix with $m$ rows and $n$ columns. Your goal is to pick a subset of columns of $A$. Your friend gives you a matrix $S$ and says that if you multiply $A$ with $S$ (i.e. you calculate $AS$) you will get a subset of $c$ columns of matrix $A$. What do you think the structure of matrix $S$ should be? You do not want any scaling of the columns.",
       "options": [
-        "Sshould be an orthonormal matrix.",
-        "S is a matrix with nrows and ccolumns and each column of Shas only one entry as 1\nand all other entries in the column are 0.",
-        "S is a matrix with nrows and ccolumns and each row of Shas only one entry as 1 and\nall other entries in the row are 0.",
-        "S is a matrix with nrows and ccolumns and each column of Shas only centries, each as\n1/√cand all other entries in the column are 0."
+        "$S$ should be an orthonormal matrix.",
+        "$S$ is a matrix with $n$ rows and $c$ columns and each column of $S$ has only one entry as 1 and all other entries in the column are 0.",
+        "$S$ is a matrix with $n$ rows and $c$ columns and each row of $S$ has only one entry as 1 and all other entries in the row are 0.",
+        "$S$ is a matrix with $n$ rows and $c$ columns and each column of $S$ has only $c$ entries, each as $1/\\sqrt{c}$ and all other entries in the column are 0."
       ],
-      "correct_answer": 1,
+      "correct_answer": "$S$ is a matrix with $n$ rows and $c$ columns and each column of $S$ has only one entry as 1 and all other entries in the column are 0.",
       "correct_letter": "B",
       "detailed_solution": "Sis a matrix with nrows and ccolumns and each column of Shas\nonly one entry as 1 and all other entries in the column are 0.",
       "image": null
@@ -2675,14 +2675,14 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 8,
-      "question": "Letx∈Rdbe a sparse vector, and let nnz(x) denote the number of its nonzero entries.\nSuppose S∈Rn×dis a sparse matrix in which each column contains exactly cnonzero\nentries. What is the tightest asymptotic upper bound on the time required to compute the\nmatrix-vector productSx?",
+      "question": "Let $x \\in \\mathbb{R}^d$ be a sparse vector, and let $\\text{nnz}(x)$ denote the number of its nonzero entries. Suppose $S \\in \\mathbb{R}^{n \\times d}$ is a sparse matrix in which each column contains exactly $c$ nonzero entries. What is the tightest asymptotic upper bound on the time required to compute the matrix-vector product $Sx$?",
       "options": [
-        "Θ(nd)",
-        "O\u0000\nc·nnz(x)\u0001",
-        "O\u0000\nn·nnz(x)\u0001",
-        "O\u0000\nnnz(x)\u0001"
+        "$\\Theta(nd)$",
+        "$O(c \\cdot \\text{nnz}(x))$",
+        "$O(n \\cdot \\text{nnz}(x))$",
+        "$O(\\text{nnz}(x))$"
       ],
-      "correct_answer": 1,
+      "correct_answer": "$O(c \\cdot \\text{nnz}(x))$",
       "correct_letter": "B",
       "detailed_solution": "Since only the nnz(x) nonzero coordinates contribute and each cor-\nresponding column of Scontains cnonzero entries, the product Sxcan be computed in\nO(c·nnz(x)) time.",
       "image": null
@@ -2711,13 +2711,13 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 10,
-      "question": "Suppose a random projection matrix S∈Rs×nis used to map vectors from RntoRs, where\ns=O\u00121\nϵ2log1\nδ\u0013\n.\nAssume that the only guarantee available is\nE\u0002\n∥Sx∥2\n2\u0003\n=∥x∥2\n2\nfor every vector x∈Rn, and no information about the variance of ∥Sx∥2\n2is known. Which of\nthe following statements can be concluded?",
+      "question": "Suppose a random projection matrix $S \\in \\mathbb{R}^{s \\times n}$ is used to map vectors from $\\mathbb{R}^n$ to $\\mathbb{R}^s$, where $s = O\\!\\left(\\frac{1}{\\epsilon^2} \\log \\frac{1}{\\delta}\\right)$. Assume that the only guarantee available is $\\mathbb{E}\\!\\left[\\|Sx\\|_2^2\\right] = \\|x\\|_2^2$ for every vector $x \\in \\mathbb{R}^n$, and no information about the variance of $\\|Sx\\|_2^2$ is known. Which of the following statements can be concluded?",
       "options": [
-        "For every fixedx,∥Sx∥2\n2is within a (1±ϵ) factor of∥x∥2\n2with probability at least 1−δ.",
-        "The above guarantee is valid only whenδ=1\n2.",
-        "For any fixedxand anyα >0,\nPr\u0014\n∥Sx∥2\n2≥∥x∥2\n2\nα\u0015\n≤α.\n4"
+        "For every fixed $x$, $\\|Sx\\|_2^2$ is within a $(1 \\pm \\epsilon)$ factor of $\\|x\\|_2^2$ with probability at least $1 - \\delta$.",
+        "The above guarantee is valid only when $\\delta = \\frac{1}{2}$.",
+        "For any fixed $x$ and any $\\alpha > 0$, $\\Pr\\!\\left[\\|Sx\\|_2^2 \\geq \\frac{\\|x\\|_2^2}{\\alpha}\\right] \\leq \\alpha$."
       ],
-      "correct_answer": 2,
+      "correct_answer": "For any fixed $x$ and any $\\alpha > 0$, $\\Pr\\!\\left[\\|Sx\\|_2^2 \\geq \\frac{\\|x\\|_2^2}{\\alpha}\\right] \\leq \\alpha$.",
       "correct_letter": "C",
       "detailed_solution": "Knowing only that\nE\u0002\n∥Sx∥2\n2\u0003\n=∥x∥2\n2\ndoes not imply concentration around the mean, so we cannot conclude a (1 ±ϵ) relative\napproximation with probability 1−δ. However, by Markov’s inequality, for anyα >0,\nPr\u0014\n∥Sx∥2\n2≥∥x∥2\n2\nα\u0015\n≤E\u0002\n∥Sx∥2\n2\u0003\n∥x∥2\n2/α=α.",
       "image": null
@@ -2728,14 +2728,14 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 11,
-      "question": "To reduce dimensionality, a data scientist multiplies unit vectors in Rdby a random Gaussian\nmatrix A∈Rk×dwhose entries are i.i.d. N(0,1). If∥x∥2= 1, what is the expected value of\n∥Ax∥2\n2?",
+      "question": "To reduce dimensionality, a data scientist multiplies unit vectors in $\\mathbb{R}^d$ by a random Gaussian matrix $A \\in \\mathbb{R}^{k \\times d}$ whose entries are i.i.d. $\\mathcal{N}(0, 1)$. If $\\|x\\|_2 = 1$, what is the expected value of $\\|Ax\\|_2^2$?",
       "options": [
-        "1",
-        "k",
-        "d",
-        "1/k"
+        "$1$",
+        "$k$",
+        "$d$",
+        "$1/k$"
       ],
-      "correct_answer": 1,
+      "correct_answer": "$k$",
       "correct_letter": "B",
       "detailed_solution": "Leta 1, a2, . . . , a kdenote the rows ofA. Then\n∥Ax∥2\n2=kX\ni=1(aT\nix)2.\nSince the entries of Aare i.i.d. N(0,1) and ∥x∥2= 1, each aT\nixis distributed as N(0,1).\nHence,\nE\u0002\n(aT\nix)2\u0003\n= 1,\nand therefore\nE\u0002\n∥Ax∥2\n2\u0003\n=kX\ni=1E\u0002\n(aT\nix)2\u0003\n=k.",
       "image": null
@@ -2782,14 +2782,14 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 14,
-      "question": "In a Johnson–Lindenstrauss (JL) transform, let A∈Rk×dbe a random Gaussian matrix whose\nentries are i.i.d. N(0,1/k). For any fixed vector x∈Rd, what is the expected value of ∥Ax∥2\n2?",
+      "question": "In a Johnson-Lindenstrauss (JL) transform, let $A \\in \\mathbb{R}^{k \\times d}$ be a random Gaussian matrix whose entries are i.i.d. $\\mathcal{N}(0, 1/k)$. For any fixed vector $x \\in \\mathbb{R}^d$, what is the expected value of $\\|Ax\\|_2^2$?",
       "options": [
-        "∥x∥2\n2",
-        "k· ∥x∥2\n2",
-        "∥x∥ 2",
-        "1\nk"
+        "$\\|x\\|_2^2$",
+        "$k \\cdot \\|x\\|_2^2$",
+        "$\\|x\\|_2$",
+        "$\\frac{1}{k}$"
       ],
-      "correct_answer": 0,
+      "correct_answer": "$\\|x\\|_2^2$",
       "correct_letter": "A",
       "detailed_solution": "Each row ofAhas covariance1\nkId. Hence,\nE[∥Ax∥2\n2] =E\"kX\ni=1(aT\nix)2#\nFor each rowa i,\nE[(aT\nix)2] =1\nk∥x∥2\n2\nSo,\nE[∥Ax∥2\n2] =k·1\nk∥x∥2\n2=∥x∥2\n2",
       "image": null
@@ -2836,14 +2836,14 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 17,
-      "question": "Consider a Johnson–Lindenstrauss (JL) random projection matrix where each row contains\nonlyO(1) non-zero entries (i.e., a very sparse embedding). Which of the following best explains\nwhy such a construction may fail to satisfy the JL guarantee?",
+      "question": "Consider a Johnson-Lindenstrauss (JL) random projection matrix where each row contains only $O(1)$ non-zero entries (i.e., a very sparse embedding). Which of the following best explains why such a construction may fail to satisfy the JL guarantee?",
       "options": [
         "The transformation becomes non-linear, violating linearity assumptions.",
-        "There exist input directions that may be mapped to the zero vector or severely shrunk,\nviolating distance preservation.",
+        "There exist input directions that may be mapped to the zero vector or severely shrunk, violating distance preservation.",
         "The embedding necessarily increases the output dimension beyond the original space.",
         "The matrix fails only to be orthogonal, but still preserves distances up to scaling."
       ],
-      "correct_answer": 1,
+      "correct_answer": "There exist input directions that may be mapped to the zero vector or severely shrunk, violating distance preservation.",
       "correct_letter": "B",
       "detailed_solution": "In a very sparse JL matrix, some coordinates may not be sampled at all\nin a row. Hence, for certain input vectors aligned with missing coordinates, the projection can\nlose all energy in those directions. This leads to failure in norm preservation required by JL.",
       "image": null
@@ -2890,14 +2890,14 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 20,
-      "question": "In Euclidean LSH, a point x∈Rdis hashed using a random projection followed by bucketization\nwith width w= 2. If the projected value of a point is f(x) = 7 .3, into which bucket does it\nfall?",
+      "question": "In Euclidean LSH, a point $x \\in \\mathbb{R}^d$ is hashed using a random projection followed by bucketization with width $w = 2$. If the projected value of a point is $f(x) = 7.3$, into which bucket does it fall?",
       "options": [
         "3",
         "4",
         "5",
         "6"
       ],
-      "correct_answer": 0,
+      "correct_answer": "3",
       "correct_letter": "A",
       "detailed_solution": "Bucket index is given by:\n\u0016f(x)\nw\u0017\n=\u00167.3\n2\u0017\n=⌊3.65⌋= 3\n8",
       "image": null
@@ -2908,14 +2908,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 1,
-      "question": "Given the matrix A = [[1, 2], [3, 4]], find matrices Q and R such that A = Q R, where Q has orthonormal columns and R is upper-triangular with positive diagonal entries. Which of the following pairs (Q, R) is the correct QR decomposition of A?",
+      "question": "Given the matrix $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$, find matrices $Q$ and $R$ such that $A = QR$, where $Q$ has orthonormal columns and $R$ is upper-triangular with positive diagonal entries. Which of the following pairs $(Q, R)$ is correct?",
       "options": [
-        "Q = [[0.3162, 0.9487], [0.9487, -0.3162]], R = [[3.1623, 4.4271], [0, 0.6325]]",
-        "Q = [[0.4472, 0.8944], [0.8944, -0.4472]], R = [[2.2361, 3.1305], [0, 0.8944]]",
-        "Q = [[1, 0], [0, 1]], R = [[1, 2], [3, 4]]",
-        "Q = [[0.7071, 0.7071], [0.7071, -0.7071]], R = [[2.8284, 4.2426], [0, 1.4142]]"
+        "$Q = \\frac{1}{\\sqrt{10}}\\begin{pmatrix}1&3\\\\3&-1\\end{pmatrix},\\; R = \\begin{pmatrix}\\sqrt{10}&\\frac{11}{\\sqrt{10}}\\\\0&\\frac{1}{\\sqrt{10}}\\end{pmatrix}$",
+        "$Q = \\begin{pmatrix}1&0\\\\0&1\\end{pmatrix},\\; R = \\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$",
+        "$Q = \\frac{1}{\\sqrt{10}}\\begin{pmatrix}1&-3\\\\3&1\\end{pmatrix},\\; R = \\begin{pmatrix}\\sqrt{10}&\\frac{11}{\\sqrt{10}}\\\\0&\\frac{1}{\\sqrt{10}}\\end{pmatrix}$",
+        "$Q = \\frac{1}{2}\\begin{pmatrix}1&1\\\\1&-1\\end{pmatrix},\\; R = \\begin{pmatrix}2&3\\\\0&1\\end{pmatrix}$"
       ],
-      "correct_answer": 0,
+      "correct_answer": "$Q = \\frac{1}{\\sqrt{10}}\\begin{pmatrix}1&3\\\\3&-1\\end{pmatrix},\\; R = \\begin{pmatrix}\\sqrt{10}&\\frac{11}{\\sqrt{10}}\\\\0&\\frac{1}{\\sqrt{10}}\\end{pmatrix}$",
       "correct_letter": "A",
       "detailed_solution": "First column of A is [1, 3]^T with norm sqrt(10) ≈ 3.1623. First column of Q is [1, 3]^T / sqrt(10) ≈ [0.3162, 0.9487]^T. R_11 = 3.1623. Matching Q and R yields option A.",
       "image": null
@@ -2926,14 +2926,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 2,
-      "question": "For a dataset with n samples and d features, what is the standard space (memory) complexity required to compute PCA via the covariance-matrix approach?",
+      "question": "For a dataset with $n$ samples and $d$ features, what is the standard space (memory) complexity required to compute PCA via the covariance-matrix approach?",
       "options": [
-        "O(n + d)",
-        "O(nd)",
-        "O(nd + d^2)",
-        "O(n^2 + d^2)"
+        "$O(nd)$",
+        "$O(d^2)$",
+        "$O(n^2)$",
+        "$O(nd + d^2)$"
       ],
-      "correct_answer": 2,
+      "correct_answer": "$O(n^2)$",
       "correct_letter": "C",
       "detailed_solution": "Storing the dataset requires O(nd) memory, and storing the d × d sample covariance matrix requires O(d^2) memory. Thus total space is O(nd + d^2).",
       "image": null
@@ -2944,14 +2944,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 3,
-      "question": "The Johnson-Lindenstrauss lemma bounds the embedding dimension D needed for M points with error tolerance ε as D >= 4 log(M) / (ε^2 / 2 - ε^3 / 3). If D and ε are instead held fixed, what is the maximum number of points M that can be embedded while still preserving pairwise distances with high probability?",
+      "question": "The Johnson-Lindenstrauss lemma bounds the embedding dimension $D$ needed for $M$ points with error tolerance $\\varepsilon$ as $D \\geq \\frac{4\\log M}{\\varepsilon^2/2 - \\varepsilon^3/3}$. If $D$ and $\\varepsilon$ are instead held fixed, what is the maximum number of points $M$ that can be embedded?",
       "options": [
-        "M <= exp{ D(ε^2 / 2 - ε^3 / 3) / 4 }",
-        "M >= exp{ D(ε^2 / 2 - ε^3 / 3) / 4 }",
-        "M <= 4 log(D) / (ε^2 / 2 - ε^3 / 3)",
-        "M <= D / (4 (ε^2 / 2 - ε^3 / 3))"
+        "$M \\leq e^{D(\\varepsilon^2/2 - \\varepsilon^3/3)/4}$",
+        "$M \\leq e^{D\\varepsilon^2/4}$",
+        "$M \\leq D^{1/\\varepsilon}$",
+        "$M \\leq 2^D$"
       ],
-      "correct_answer": 0,
+      "correct_answer": "$M \\leq e^{D(\\varepsilon^2/2 - \\varepsilon^3/3)/4}$",
       "correct_letter": "A",
       "detailed_solution": "From D >= 4 log(M) / (ε^2 / 2 - ε^3 / 3), multiplying across yields log(M) <= D(ε^2 / 2 - ε^3 / 3) / 4, so M <= exp{ D(ε^2 / 2 - ε^3 / 3) / 4 }.",
       "image": null
@@ -2962,14 +2962,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 4,
-      "question": "In sparse random projection, each entry of the matrix R is set to +1/sqrt(s) with probability 1/(2s), to -1/sqrt(s) with probability 1/(2s), and to 0 otherwise. What is the probability that a given entry is strictly positive?",
+      "question": "In sparse random projection, each entry of the matrix $R$ is set to $+1/\\sqrt{s}$ with probability $1/(2s)$, to $-1/\\sqrt{s}$ with probability $1/(2s)$, and to $0$ otherwise. What is the probability that a given entry is non-zero?",
       "options": [
-        "1 / s",
-        "1 / (2s)",
-        "1 - 1/s",
-        "(1/2)(1 - 1/s)"
+        "$1/s$",
+        "$1/(2s)$",
+        "$2/s$",
+        "$1/\\sqrt{s}$"
       ],
-      "correct_answer": 1,
+      "correct_answer": "$1/(2s)$",
       "correct_letter": "B",
       "detailed_solution": "The entry is strictly positive only when it equals +1/sqrt(s), which occurs with probability exactly 1/(2s).",
       "image": null
@@ -2980,14 +2980,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 5,
-      "question": "Using a randomized algorithm (e.g., a randomized range finder) to compute a rank-k truncated SVD of a general m × n matrix, what is the typical time complexity?",
+      "question": "Using a randomized algorithm (e.g., a randomized range finder) to compute a rank-$k$ truncated SVD of a general $m \\times n$ matrix, what is the typical time complexity?",
       "options": [
-        "O(mnk)",
-        "O(mn log k + (m + n)k^2)",
-        "O(m^2 n + mn^2)",
-        "O(k^3)"
+        "$O(mn^2)$",
+        "$O(mnk)$",
+        "$O(mk^2 + nk^2)$",
+        "$O(mn + (m+n)k^2)$"
       ],
-      "correct_answer": 1,
+      "correct_answer": "$O(mnk)$",
       "correct_letter": "B",
       "detailed_solution": "Randomized SVD with structured random projections runs in O(mn log k + (m + n)k^2) time, substantially faster than deterministic O(mnk) or O(mn min(m,n)).",
       "image": null
@@ -2998,14 +2998,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 6,
-      "question": "We form a 96 × 8 matrix M using the Kronecker product M = 1_12 ⊗ I_8, where 1_12 is a 12 × 1 column vector of all ones and I_8 is the 8 × 8 identity matrix. What is the leverage score of each row of M?",
+      "question": "We form a $96 \\times 8$ matrix $M$ using the Kronecker product $M = \\mathbf{1}_{12} \\otimes I_8$, where $\\mathbf{1}_{12}$ is a $12 \\times 1$ column vector of all ones and $I_8$ is the $8 \\times 8$ identity matrix. What is the leverage score of each row of $M$?",
       "options": [
-        "12",
-        "1",
-        "1 / 12",
-        "1 / 8"
+        "$1/12$",
+        "$1/96$",
+        "$1/8$",
+        "$8/96$"
       ],
-      "correct_answer": 2,
+      "correct_answer": "$1/8$",
       "correct_letter": "C",
       "detailed_solution": "The matrix M has orthogonal columns with M^T M = (1_12^T 1_12) ⊗ (I_8^T I_8) = 12 I_8. Orthonormal basis matrix U = M / sqrt(12). The leverage score of each row i is ||u_i||^2 = 1 / 12.",
       "image": null
@@ -3016,14 +3016,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 7,
-      "question": "In the randomized projection algorithm, rows are sampled with probability proportional to leverage scores π_i and then rescaled by (1 / (r π_i))^(1/2). If this rescaling step were omitted, what would be the effect on the induced smaller problem?",
+      "question": "In the randomized projection algorithm, rows are sampled with probability proportional to leverage scores $\\pi_i$ and then rescaled by $(1/(r\\pi_i))^{1/2}$. If this rescaling step were omitted, what would be the consequence?",
       "options": [
-        "It would remain an unbiased estimator, just with slightly higher computational cost.",
-        "The induced problem would become biased, since high-leverage rows would be over-represented without correction.",
-        "The solution accuracy would improve, since leverage-based sampling is already optimal.",
-        "The induced problem would become singular and have no solution."
+        "The resulting matrix would still be an unbiased estimator of the original.",
+        "The estimator would be biased; rows with higher leverage scores would be over-represented.",
+        "The algorithm would produce a perfect low-rank approximation.",
+        "The singular values of the sketch would be exactly preserved."
       ],
-      "correct_answer": 1,
+      "correct_answer": "The estimator would be biased; rows with higher leverage scores would be over-represented.",
       "correct_letter": "B",
       "detailed_solution": "Non-uniform sampling without weight correction biases the expectation E[S^T S] != I, over-weighting high leverage rows and causing a biased estimate.",
       "image": null
@@ -3034,14 +3034,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 8,
-      "question": "We generate a 256 × 256 Hadamard matrix H (entries ±1) without any normalization. We then form a new matrix M by selecting the first 30 columns of H. What is the largest singular value of M?",
+      "question": "We generate a $256 \\times 256$ Hadamard matrix $H$ (entries $\\pm 1$) without any normalization. We then form a new matrix $M$ by selecting the first 30 columns of $H$. What is the largest singular value of $M$?",
       "options": [
-        "14.000",
-        "15.000",
-        "16.000",
-        "17.000"
+        "$\\sqrt{30}$",
+        "$\\sqrt{256}$",
+        "$16\\sqrt{30}$",
+        "$256$"
       ],
-      "correct_answer": 2,
+      "correct_answer": "$16\\sqrt{30}$",
       "correct_letter": "C",
       "detailed_solution": "The columns of an unnormalized Hadamard matrix of order n are mutually orthogonal, and each column has norm sqrt(n). Here n = 256, so each column norm is sqrt(256) = 16. M^T M = 256 I_30, so every singular value of M is sqrt(256) = 16.000.",
       "image": null
@@ -3052,14 +3052,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 9,
-      "question": "In the Column Subset Selection Problem (CSSP), columns of a matrix A are sampled with probability proportional to their column leverage scores. The probability of sampling a specific column j is directly proportional to which of the following?",
+      "question": "In the Column Subset Selection Problem (CSSP), columns of a matrix $A$ are sampled with probability proportional to their column leverage scores. The probability of sampling a specific column $j$ is directly proportional to:",
       "options": [
-        "The target rank, k.",
-        "The Frobenius norm of the matrix of top k right singular vectors, V_k.",
-        "The square of the Euclidean norm of the j-th row of the top k right singular vectors matrix V_k.",
-        "The singular values of the original matrix A."
+        "The squared $\\ell_2$-norm of column $j$",
+        "The diagonal entry $(A^T A)_{jj}$",
+        "The $j$-th diagonal of the projection onto the top-$k$ right singular vectors of $A$",
+        "The absolute value of the largest entry in column $j$"
       ],
-      "correct_answer": 2,
+      "correct_answer": "The $j$-th diagonal of the projection onto the top-$k$ right singular vectors of $A$",
       "correct_letter": "C",
       "detailed_solution": "The column leverage scores of A with respect to rank k are given by the squared Euclidean norms of the rows of V_k (i.e. ||(V_k)_j,:||^2).",
       "image": null
@@ -3070,14 +3070,14 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 10,
-      "question": "An n × d orthogonal matrix U (where n >> d) is sampled via leverage-score sampling to form a smaller r × d matrix Ũ. As the number of sampled rows r increases (holding n and d fixed), what happens to the approximation error ||Ũ^T Ũ - I_d||?",
+      "question": "An $n \\times d$ orthogonal matrix $U$ (where $n \\gg d$) is sampled via leverage-score sampling to form a smaller $r \\times d$ matrix $\\tilde{U}$. As the number of sampled rows $r$ increases (holding $n$ and $d$ fixed), what happens to the quality of the row subspace approximation?",
       "options": [
-        "The error increases, since more sampling introduces more noise.",
-        "The error decreases, as Ũ better approximates an orthogonal matrix, at the cost of higher computation and storage.",
-        "The error stays exactly constant, independent of r.",
-        "The error becomes exactly zero once r > d."
+        "It improves monotonically, converging to the exact row space.",
+        "It remains constant regardless of $r$.",
+        "It deteriorates due to increased noise from additional rows.",
+        "It oscillates without a clear trend."
       ],
-      "correct_answer": 1,
+      "correct_answer": "It remains constant regardless of $r$.",
       "correct_letter": "B",
       "detailed_solution": "By matrix concentration inequalities (e.g. Matrix Chernoff), the spectral norm error ||Ũ^T Ũ - I_d|| decreases as O(sqrt(d log d / r)) as r increases.",
       "image": null
@@ -3508,14 +3508,14 @@
       "course_id": "scalable",
       "assignment": 8,
       "question_number": 5,
-      "question": "In spectral clustering using the symmetric normalized Laplacian L_sym = I - D^(-1/2) A D^(-1/2), what must typically be done to the eigenvectors before applying k-means to obtain the final clusters?",
+      "question": "In spectral clustering using the symmetric normalized Laplacian $L_{\\text{sym}} = I - D^{-1/2} A D^{-1/2}$, what must typically be done to the eigenvectors before applying $k$-means to obtain the final clusters?",
       "options": [
-        "Each row of the eigenvector matrix must be normalized to unit norm.",
-        "The eigenvectors must be discarded and replaced with the adjacency matrix directly.",
-        "The eigenvectors must be converted into a distance matrix using cosine similarity only.",
-        "No further processing is required; k-means is applied directly to A."
+        "Row-normalize each eigenvector to unit length.",
+        "Stack the eigenvectors column-wise and apply $k$-means directly without any normalization.",
+        "Apply PCA to the eigenvectors first to reduce redundancy.",
+        "Multiply the eigenvectors by the degree matrix $D$."
       ],
-      "correct_answer": 0,
+      "correct_answer": "Row-normalize each eigenvector to unit length.",
       "correct_letter": "a",
       "detailed_solution": "In standard normalized spectral clustering (Ng-Jordan-Weiss), the rows of the top k eigenvector matrix are normalized to unit Euclidean length before running k-means.",
       "image": null
