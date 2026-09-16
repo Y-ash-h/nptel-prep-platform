@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPTEL Exam PrepMaster — Scalable Data Science & Machine Learning</title>
+  <meta name="description" content="Comprehensive NPTEL Exam Preparation Platform for Scalable Data Science and Machine Learning for Earth System Sciences. 200 authentic assignment questions, randomized tests, and detailed solutions.">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX for Beautiful Mathematical Equations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- Top Header -->
+    <header class="top-nav">
+      <div class="nav-left">
+        <a href="#" class="brand" id="brand-link">
+          <div class="brand-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+              <path d="M6 6h10"></path>
+              <path d="M6 10h10"></path>
+              <path d="m9 16 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">NPTEL <span class="text-gradient">PrepMaster</span></span>
+            <span class="brand-subtitle">Interactive Practice & Exam Simulator</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="nav-right">
+        <button id="theme-toggle" class="nav-btn icon-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="home-nav-btn" class="nav-btn secondary-btn" title="Return to Dashboard">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Home</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Views Container -->
+    <main id="app-view">
+      <!-- DASHBOARD VIEW -->
+      <section id="view-dashboard" class="view-active">
+        <div class="hero-banner">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>200 Verified Assignment Questions • 2026 NPTEL Curriculum</span>
+          </div>
+          <h1 class="hero-title">Master Your <span class="text-gradient">NPTEL Certification</span></h1>
+          <p class="hero-description">
+            Exact assignment questions, verified answer keys, detailed step-by-step mathematical solutions, dynamic option jumbling, and instant NPTEL weighted score scoring.
+          </p>
+        </div>
+
+        <!-- Course Selector Tabs -->
+        <div class="course-selector-container">
+          <div class="course-tabs" role="tablist">
+            <button class="course-tab active" data-course="scalable" role="tab" aria-selected="true">
+              <div class="course-tab-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div class="course-tab-info">
+                <span class="course-tab-name">Scalable Data Science</span>
+                <span class="course-tab-count">120 Questions • Assignments 1–8</span>
+              </div>
+            </button>
+
+            <button class="course-tab" data-course="ml" role="tab" aria-selected="false">
+              <div class="course-tab-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <div class="course-tab-info">
+                <span class="course-tab-name">Machine Learning for Earth System Sciences</span>
+                <span class="course-tab-count">80 Questions • Assignments 1–8</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Global Test Controls (Option Jumbling & Feedback Style) -->
+        <div class="config-bar glass-card">
+          <div class="config-bar-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <span>Test Options</span>
+          </div>
+
+          <div class="config-controls">
+            <label class="toggle-control" title="Randomize choice positions (A, B, C, D) for deeper recall">
+              <input type="checkbox" id="cfg-jumble-options" checked>
+              <span class="toggle-slider"></span>
+              <span class="toggle-label">
+                <strong>Jumble Options</strong>
+                <small>Shuffle choice positions</small>
+              </span>
+            </label>
+
+            <div class="segmented-control" role="group" aria-label="Feedback Mode">
+              <button class="seg-btn active" data-mode="exam" id="mode-exam-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Exam Simulation
+              </button>
+              <button class="seg-btn" data-mode="practice" id="mode-practice-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                Practice / Instant Feedback
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curated Modes (50 Qs, 20 Qs, Marathon) -->
+        <div class="section-header">
+          <h2 class="section-title">Speed & Comprehensive Tests</h2>
+          <p class="section-subtitle">Randomized selections jumbled across all 8 assignments</p>
+        </div>
+
+        <div class="test-cards-grid">
+          <!-- 50 Random Questions -->
+          <div class="test-card glass-card hover-lift" data-test-type="random50">
+            <div class="test-card-accent accent-purple"></div>
+            <div class="test-card-header">
+              <span class="test-badge badge-purple">Recommended Exam Simulation</span>
+              <div class="test-icon icon-purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="test-card-title">50 Random Questions</h3>
+            <p class="test-card-desc">
+              50 questions randomly chosen and jumbled from all course assignments. Mimics the official NPTEL final exam format.
+            </p>
+            <div class="test-meta">
+              <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 60 Mins</span>
+              <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg> 50 Questions</span>
+            </div>
+            <button class="start-test-btn primary-btn" data-type="random50">
+              <span>Start 50-Q Test</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 20 Random Questions -->
+          <div class="test-card glass-card hover-lift" data-test-type="random20">
+            <div class="test-card-accent accent-cyan"></div>
+            <div class="test-card-header">
+              <span class="test-badge badge-cyan">Quick Practice Sprint</span>
+              <div class="test-icon icon-cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+            </div>
+            <h3 class="test-card-title">20 Random Questions</h3>
+            <p class="test-card-desc">
+              Fast 20-question randomized sprint sampled across all assignments. Perfect for daily practice and quick revision.
+            </p>
+            <div class="test-meta">
+              <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 25 Mins</span>
+              <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg> 20 Questions</span>
+            </div>
+            <button class="start-test-btn primary-btn" data-type="random20">
+              <span>Start 20-Q Sprint</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- All Questions Jumbled Marathon -->
+          <div class="test-card glass-card hover-lift" data-test-type="marathon">
+            <div class="test-card-accent accent-emerald"></div>
+            <div class="test-card-header">
+              <span class="test-badge badge-emerald">Full Course Marathon</span>
+              <div class="test-icon icon-emerald">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="test-card-title">All Questions Jumbled</h3>
+            <p class="test-card-desc">
+              Every single question in the entire course shuffled into one exhaustive mastery test.
+            </p>
+            <div class="test-meta">
+              <span class="meta-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Untimed / Custom</span>
+              <span class="meta-item" id="marathon-count-meta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg> All Questions</span>
+            </div>
+            <button class="start-test-btn primary-btn" data-type="marathon">
+              <span>Start Full Marathon</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Per-Assignment Tests Section -->
+        <div class="section-header mt-8">
+          <div class="header-with-badge">
+            <h2 class="section-title">Per-Assignment Chapter Tests</h2>
+            <span class="section-count-badge" id="assignment-section-info">8 Assignments</span>
+          </div>
+          <p class="section-subtitle">Target specific assignments to reinforce topic-wise concepts</p>
+        </div>
+
+        <div class="assignments-grid" id="assignments-grid">
+          <!-- Dynamically populated per course -->
+        </div>
+      </section>
+
+      <!-- ACTIVE TEST VIEW -->
+      <section id="view-test" class="view-hidden">
+        <div class="test-container">
+          <!-- Quiz Top Header Bar -->
+          <div class="quiz-top-bar glass-card">
+            <div class="quiz-info-group">
+              <button id="exit-test-btn" class="nav-btn text-btn" title="Exit Test">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"></path></svg>
+                <span>Exit</span>
+              </button>
+              <div class="quiz-title-badge" id="active-test-title">50 Random Questions</div>
+              <span class="quiz-mode-pill" id="active-test-mode-pill">Exam Mode</span>
+            </div>
+
+            <!-- Quiz Timer & Question Navigation Indicator -->
+            <div class="quiz-metrics-group">
+              <div class="timer-card" id="timer-card">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span id="timer-display">00:00</span>
+              </div>
+
+              <button id="toggle-palette-btn" class="nav-btn secondary-btn" title="Toggle Question Palette">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg>
+                <span id="palette-btn-text">Questions (1/<span id="total-q-indicator">50</span>)</span>
+              </button>
+
+              <button id="finish-test-btn" class="nav-btn submit-btn">
+                <span>Submit Exam</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="quiz-progress-fill" style="width: 2%;"></div>
+          </div>
+
+          <!-- Main Question Area Layout with Sidebar Palette -->
+          <div class="quiz-layout">
+            <!-- Left: Current Question Area -->
+            <div class="question-main-pane">
+              <div class="question-card glass-card">
+                <!-- Question Header -->
+                <div class="question-header">
+                  <div class="q-badge-row">
+                    <span class="q-number-badge" id="q-counter">Question 1 of 50</span>
+                    <span class="q-tag" id="q-source-tag">Assignment 1</span>
+                    <span class="q-status-badge status-unanswered" id="q-status-pill">Unanswered</span>
+                  </div>
+
+                  <button id="flag-question-btn" class="flag-btn" title="Bookmark / Mark for Review">
+                    <svg class="flag-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                      <line x1="4" y1="22" x2="4" y2="15"></line>
+                    </svg>
+                    <span id="flag-btn-label">Review Later</span>
+                  </button>
+                </div>
+
+                <!-- Question Text -->
+                <div class="question-content" id="question-text">
+                  <!-- Text rendered with KaTeX -->
+                </div>
+
+                <!-- Optional Attached Image -->
+                <div class="question-image-container" id="question-image-container" style="display: none;">
+                  <img id="question-image" src="" alt="Question Diagram">
+                </div>
+
+                <!-- Options List -->
+                <div class="options-container" id="options-container" role="radiogroup">
+                  <!-- Dynamically populated options -->
+                </div>
+
+                <!-- Practice Mode Explanation Container (Revealed immediately in Practice mode) -->
+                <div class="practice-explanation glass-card" id="practice-explanation" style="display: none;">
+                  <div class="exp-header">
+                    <span class="exp-badge" id="exp-status-badge">Correct</span>
+                    <span class="exp-title">Detailed Solution</span>
+                  </div>
+                  <div class="exp-content" id="practice-explanation-text"></div>
+                </div>
+
+                <!-- Bottom Navigation Buttons -->
+                <div class="question-actions-bar">
+                  <button id="prev-q-btn" class="action-btn secondary-btn" disabled>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    <span>Previous</span>
+                  </button>
+
+                  <div class="action-center-group">
+                    <button id="clear-choice-btn" class="action-btn outline-btn" title="Clear chosen answer">
+                      <span>Clear Choice</span>
+                    </button>
+                  </div>
+
+                  <button id="next-q-btn" class="action-btn primary-btn">
+                    <span>Next</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Question Palette Drawer / Sidebar -->
+            <aside class="palette-sidebar glass-card" id="palette-sidebar">
+              <div class="palette-header">
+                <h3 class="palette-title">Question Palette</h3>
+                <button id="close-palette-btn" class="icon-btn mobile-only" title="Close Palette">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+              </div>
+
+              <!-- Legend -->
+              <div class="palette-legend">
+                <div class="legend-item"><span class="legend-dot dot-answered"></span> Answered (<span id="count-answered">0</span>)</div>
+                <div class="legend-item"><span class="legend-dot dot-flagged"></span> Flagged (<span id="count-flagged">0</span>)</div>
+                <div class="legend-item"><span class="legend-dot dot-unanswered"></span> Unanswered (<span id="count-unanswered">0</span>)</div>
+              </div>
+
+              <!-- Filter Tabs -->
+              <div class="palette-filters">
+                <button class="palette-filter active" data-filter="all">All</button>
+                <button class="palette-filter" data-filter="unanswered">Unanswered</button>
+                <button class="palette-filter" data-filter="flagged">Flagged</button>
+              </div>
+
+              <!-- Palette Grid of Numbers -->
+              <div class="palette-grid" id="palette-grid">
+                <!-- Populated dynamically -->
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS & REVIEW VIEW -->
+      <section id="view-results" class="view-hidden">
+        <div class="results-container">
+          <!-- Results Header Banner -->
+          <div class="results-hero glass-card">
+            <div class="result-badge-container">
+              <div class="trophy-circle" id="trophy-circle">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <h2 class="results-title" id="results-headline">Test Completed!</h2>
+            <p class="results-subtitle" id="results-test-name">Scalable Data Science • 50 Random Questions</p>
+
+            <!-- Key Metric Cards Grid -->
+            <div class="score-cards-grid">
+              <!-- Raw Marks -->
+              <div class="score-card glass-card">
+                <span class="score-label">Raw Score</span>
+                <div class="score-val text-gradient" id="score-raw">0 / 0</div>
+                <span class="score-sub" id="score-raw-sub">Total marks obtained</span>
+              </div>
+
+              <!-- Accuracy Percentage -->
+              <div class="score-card glass-card">
+                <span class="score-label">Accuracy</span>
+                <div class="score-val text-cyan" id="score-accuracy">0.0%</div>
+                <span class="score-sub">(Correct / Total) × 100</span>
+              </div>
+
+              <!-- Scaled NPTEL Score Formula -->
+              <div class="score-card glass-card highlight-card">
+                <span class="score-label">NPTEL Scaled Score (75% Weight)</span>
+                <div class="score-val text-emerald" id="score-nptel">0.0%</div>
+                <span class="score-sub formula-sub">(User Marks / Total Marks) × (3/4) × 100</span>
+              </div>
+
+              <!-- Time Spent -->
+              <div class="score-card glass-card">
+                <span class="score-label">Time Taken</span>
+                <div class="score-val text-purple" id="score-time">00:00</div>
+                <span class="score-sub" id="score-speed">0s per question</span>
+              </div>
+            </div>
+
+            <!-- Breakdown Pills -->
+            <div class="breakdown-bar">
+              <div class="breakdown-item bg-correct">
+                <span class="breakdown-icon">✓</span>
+                <span>Correct: <strong id="bd-correct">0</strong></span>
+              </div>
+              <div class="breakdown-item bg-incorrect">
+                <span class="breakdown-icon">✗</span>
+                <span>Incorrect: <strong id="bd-incorrect">0</strong></span>
+              </div>
+              <div class="breakdown-item bg-skipped">
+                <span class="breakdown-icon">○</span>
+                <span>Skipped: <strong id="bd-skipped">0</strong></span>
+              </div>
+            </div>
+
+            <!-- Primary Results Action Buttons -->
+            <div class="results-actions">
+              <button id="retake-test-btn" class="primary-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                <span>Retake Test</span>
+              </button>
+              <button id="back-dashboard-btn" class="secondary-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                <span>Dashboard</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Question-by-Question Review Section -->
+          <div class="review-section">
+            <div class="review-header">
+              <div class="review-title-group">
+                <h3 class="section-title">Detailed Solutions & Explanations</h3>
+                <p class="section-subtitle">Review each question with step-by-step mathematical reasoning</p>
+              </div>
+
+              <!-- Filter Pills -->
+              <div class="review-filter-pills">
+                <button class="filter-pill active" data-review-filter="all">All (<span id="rf-all">0</span>)</button>
+                <button class="filter-pill" data-review-filter="incorrect">Mistakes (<span id="rf-incorrect">0</span>)</button>
+                <button class="filter-pill" data-review-filter="correct">Correct (<span id="rf-correct">0</span>)</button>
+                <button class="filter-pill" data-review-filter="skipped">Skipped (<span id="rf-skipped">0</span>)</button>
+              </div>
+            </div>
+
+            <div class="review-list" id="review-list">
+              <!-- Dynamically populated review questions -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>NPTEL Exam Preparation System • Scalable Data Science & Machine Learning</p>
+      <p class="footer-formula-note">Scoring Formula: <code>Percentage = (User Marks / Total Marks) × (3/4) × 100</code></p>
+    </footer>
+  </div>
+
+  <!-- Confirmation Modal for Submitting Test -->
+  <div class="modal-overlay" id="submit-modal" style="display: none;">
+    <div class="modal-card glass-card">
+      <div class="modal-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+      </div>
+      <h3 class="modal-title">Ready to Submit?</h3>
+      <p class="modal-desc">Review your current test progress before submitting:</p>
+      
+      <div class="modal-stats">
+        <div class="modal-stat-box">
+          <span class="m-val text-emerald" id="modal-answered">0</span>
+          <span class="m-lbl">Answered</span>
+        </div>
+        <div class="modal-stat-box">
+          <span class="m-val text-amber" id="modal-unanswered">0</span>
+          <span class="m-lbl">Unanswered</span>
+        </div>
+        <div class="modal-stat-box">
+          <span class="m-val text-purple" id="modal-flagged">0</span>
+          <span class="m-lbl">Flagged</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button id="modal-cancel-btn" class="action-btn secondary-btn">Continue Test</button>
+        <button id="modal-confirm-btn" class="action-btn primary-btn">Yes, Submit Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load Data and Main Script -->
+  <script src="data/questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
