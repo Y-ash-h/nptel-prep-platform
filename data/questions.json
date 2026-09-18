@@ -1486,9 +1486,9 @@
       "question_number": 1,
       "question": "A data scientist launches four independent worker nodes in a distributed computing cluster. Each node processes between 1 and 6 GB of data per minute, depending on system load, with all rates equally likely. The total throughput is defined as the sum of the throughputs of the four nodes. What is the probability that the cluster achieves a throughput of at least 22 GB/min?",
       "options": [
-        "10 / 1296",
-        "15 / 1296",
-        "20 / 1296"
+        "$10/1296$",
+        "$15/1296$",
+        "$20/1296$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -1535,10 +1535,10 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 4,
-      "question": "A machine learning algorithm is run independently n times, and each run succeeds with probability p. Let X be the number of successful runs. Assuming p < α < 1, which of the following bounds the probability that at least an α-fraction of the runs are successful?",
+      "question": "A machine learning algorithm is run independently $n$ times, and each run succeeds with probability $p$. Let $X$ be the number of successful runs. Assuming $p < \\alpha < 1$, which of the following bounds the probability that at least an $\\alpha$-fraction of the runs are successful?",
       "options": [
-        "p(1 - p) / (n(α - p))",
-        "p(1 - p) / (n(α - p)^2)",
+        "$\\dfrac{p(1-p)}{n(\\alpha - p)}$",
+        "$\\dfrac{p(1-p)}{n(\\alpha - p)^2}$",
         "Given information is incomplete"
       ],
       "correct_answer": 1,
@@ -1569,12 +1569,12 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 6,
-      "question": "Let A be a random variable such that E[A] = 50 and A > 10. Then, which of the following is correct?",
+      "question": "Let $A$ be a random variable such that $\\mathbb{E}[A] = 50$ and $A > 10$. Then, which of the following is correct?",
       "options": [
-        "E[1 / (A - 10)] >= 1 / 40",
-        "E[1 / (A - 10)] >= 1 / 10",
-        "E[1 / (A - 10)] < 40",
-        "E[1 / (A - 10)] = 40"
+        "$\\mathbb{E}\\!\\left[\\frac{1}{A-10}\\right] \\geq \\frac{1}{40}$",
+        "$\\mathbb{E}\\!\\left[\\frac{1}{A-10}\\right] \\geq \\frac{1}{10}$",
+        "$\\mathbb{E}\\!\\left[\\frac{1}{A-10}\\right] < 40$",
+        "$\\mathbb{E}\\!\\left[\\frac{1}{A-10}\\right] = 40$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -1604,11 +1604,11 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 8,
-      "question": "Suppose there are 3 coins, out of which one is fair and rest two are biased. Let us pick one of the coins uniformly at random and flip it 3 times. The three coins come with heads with a probability of 0.6, 0.1 and 0.5. What is the probability of the event HTT where H stands for heads and T for tails?",
+      "question": "Suppose there are 3 coins, out of which one is fair and the other two are biased. Let us pick one of the coins uniformly at random and flip it 3 times. The three coins come with heads with probability of 0.6, 0.1, and 0.5. What is the probability of the event HTT, where H stands for heads and T for tails?",
       "options": [
-        "302 / 1000",
-        "302 / 3000",
-        "177 / 1000"
+        "$302/1000$",
+        "$302/3000$",
+        "$177/1000$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -1621,7 +1621,7 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 9,
-      "question": "For every real matrix A ∈ R^(m×n), the matrices A^T A and A A^T have exactly the same eigenvalues.",
+      "question": "For every real matrix $A \\in \\mathbb{R}^{m \\times n}$, the matrices $A^T A$ and $A A^T$ have exactly the same eigenvalues.",
       "options": [
         "True",
         "False"
@@ -1637,7 +1637,7 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 10,
-      "question": "A reflection matrix in R^n is given by R = I - 2 v v^T, where v is a unit vector. If the vector v itself is reflected by R, by what factor is it scaled?",
+      "question": "A reflection matrix in $\\mathbb{R}^n$ is given by $R = I - 2vv^T$, where $v$ is a unit vector. If the vector $v$ itself is reflected by $R$, by what factor is it scaled?",
       "options": [
         "1",
         "-1",
@@ -1655,11 +1655,11 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 11,
-      "question": "Let M be a 4 × 4 matrix with real values, and let x ∈ R^4 be a non-zero vector. What can we say about the vectors x, M x, M^2 x, M^3 x, and M^4 x?",
+      "question": "Let $M$ be a $4 \\times 4$ matrix with real values, and let $x \\in \\mathbb{R}^4$ be a non-zero vector. What can we say about the vectors $x, Mx, M^2x, M^3x$, and $M^4x$?",
       "options": [
         "Linearly independent",
         "Linearly dependent",
-        "Linearly independent iff M is a symmetric matrix",
+        "Linearly independent iff $M$ is a symmetric matrix",
         "Cannot be determined."
       ],
       "correct_answer": 1,
@@ -1691,12 +1691,12 @@
       "course_id": "scalable",
       "assignment": 1,
       "question_number": 13,
-      "question": "Let X ∈ R^(n×d) be a mean-centered data matrix. Suppose you perform PCA by computing the eigenvectors of the covariance matrix and select the top k eigenvectors to form the projection matrix E ∈ R^(d×k). You obtain the lower-dimensional representation of the data as: Y = X E. Which of the following statements is correct regarding the ability to reconstruct X from Y?",
+      "question": "Let $X \\in \\mathbb{R}^{n \\times d}$ be a mean-centered data matrix. Suppose you perform PCA by computing the eigenvectors of the covariance matrix and select the top $k$ eigenvectors to form the projection matrix $E \\in \\mathbb{R}^{d \\times k}$. You obtain the lower-dimensional representation as $Y = XE$. Which of the following statements is correct regarding the ability to reconstruct $X$ from $Y$?",
       "options": [
-        "X can never be recovered from Y.",
-        "X can always be recovered from Y.",
-        "X can be exactly recovered from Y only if all d eigenvectors are used in E.",
-        "X can be recovered even when only the top k < d eigenvectors are used."
+        "$X$ can never be recovered from $Y$.",
+        "$X$ can always be recovered from $Y$.",
+        "$X$ can be exactly recovered from $Y$ only if all $d$ eigenvectors are used in $E$.",
+        "$X$ can be recovered even when only the top $k < d$ eigenvectors are used."
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -1871,12 +1871,12 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 3,
-      "question": "A hash familyHis stronglyk-wise universal if for anykdistinct keys (x 1, . . . , x k) and anyk\nbucket indices (y 1, . . . , y k),\nP\u0000\nh(x 1) =y 1∧ ··· ∧h(x k) =y k\u0001\n=1\nmk.\nTo construct such a family overZ p, we use a random polynomial:\nf(x) =k−1X\ni=0aixi(modp).\nWhat is the optimal storage cost of describing one hash function from this family?\n1",
+      "question": "A hash family $\\mathcal{H}$ is strongly $k$-wise universal if for any $k$ distinct keys $(x_1, \\ldots, x_k)$ and any $k$ bucket indices $(y_1, \\ldots, y_k)$, $\\Pr\\!\\left[h(x_1) = y_1 \\wedge \\cdots \\wedge h(x_k) = y_k\\right] = \\frac{1}{m^k}$. To construct such a family over $\\mathbb{Z}_p$, we use a random polynomial: $f(x) = \\sum_{i=0}^{k-1} a_i x^i \\pmod{p}$. What is the optimal storage cost of describing one hash function from this family?",
       "options": [
-        "A.O(mklogp)",
-        "B.O(klogp)",
-        "C.O(pklogm)",
-        "D.O(logk+ logm)"
+        "$O(mk \\log p)$",
+        "$O(k \\log p)$",
+        "$O(pk \\log m)$",
+        "$O(\\log k + \\log m)$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -1889,12 +1889,12 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 4,
-      "question": "A hash table withpbuckets uses chaining and receiveskkeys, each hashed independently\nand uniformly. IfXdenotes the number of buckets whose linked lists remain empty after all\ninsertions, which of the following is equal toE[X]?",
+      "question": "A hash table with $p$ buckets uses chaining and receives $k$ keys, each hashed independently and uniformly. If $X$ denotes the number of buckets whose linked lists remain empty after all insertions, which of the following is equal to $\\mathbb{E}[X]$?",
       "options": [
-        "p\u0010\n1−1\np\u0011k",
-        "p\u0000\n1−1\nk\u0001p",
-        "p\u0010\n1−1\np\u0011p",
-        "k\u0010\n1−1\np\u0011k"
+        "$p\\!\\left(1 - \\frac{1}{p}\\right)^k$",
+        "$p\\!\\left(1 - \\frac{1}{k}\\right)^p$",
+        "$p\\!\\left(1 - \\frac{1}{p}\\right)^p$",
+        "$k\\!\\left(1 - \\frac{1}{p}\\right)^k$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -1907,12 +1907,12 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 5,
-      "question": "Suppose a Misra-Gries sketch withkcounters processes a stream of lengthm. An elementx\nhas true frequencyf x=αm, whereα >1\nk+1.\nAn adversary arranges the stream to maximize underestimation ofx.\nWhat is the worst-case relative error?",
+      "question": "Suppose a Misra-Gries sketch with $k$ counters processes a stream of length $m$. An element $x$ has true frequency $f_x = \\alpha m$, where $\\alpha > \\frac{1}{k+1}$. An adversary arranges the stream to maximize underestimation of $x$. What is the worst-case relative error?",
       "options": [
-        "A.1\nαk",
-        "B. 1−1\nαk",
-        "C.1\nα(k+1)",
-        "D. 0"
+        "$\\dfrac{1}{\\alpha k}$",
+        "$1 - \\dfrac{1}{\\alpha k}$",
+        "$\\dfrac{1}{\\alpha(k+1)}$",
+        "$0$"
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -1925,12 +1925,12 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 6,
-      "question": "A Bloom filter is configured optimally so that its false positive rate is bounded byλ= 0.01.\nIfmdenotes the number of bits andnthe number of stored elements, which of the following\nasymptotic relationships betweenmandnis correct?",
+      "question": "A Bloom filter is configured optimally so that its false positive rate is bounded by $\\lambda = 0.01$. If $m$ denotes the number of bits and $n$ the number of stored elements, which of the following asymptotic relationships between $m$ and $n$ is correct?",
       "options": [
-        "m= 9.6n",
-        "m= 7n",
-        "m= 2n",
-        "m=nlog2\u0000e\nλ\u0001\nSolution:"
+        "$m = 9.6n$",
+        "$m = 7n$",
+        "$m = 2n$",
+        "$m = n \\log_2\\!\\left(\\frac{e}{\\lambda}\\right)$"
       ],
       "correct_answer": 3,
       "correct_letter": "D",
@@ -2033,12 +2033,12 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 12,
-      "question": "For a Bloom filter of sizenbits,khash functions andminserted items, what is the probability\nthat a given bit is still 0 after all insertions?",
+      "question": "For a Bloom filter of size $n$ bits, $k$ hash functions and $m$ inserted items, what is the probability that a given bit is still 0 after all insertions?",
       "options": [
-        "(1−1\nn)km",
-        "1−(1−1\nn)km",
-        "(1−k\nn)m\n4",
-        "1−(1−k\nn)m"
+        "$\\left(1 - \\frac{1}{n}\\right)^{km}$",
+        "$1 - \\left(1 - \\frac{1}{n}\\right)^{km}$",
+        "$\\left(1 - \\frac{k}{n}\\right)^{m}$",
+        "$1 - \\left(1 - \\frac{k}{n}\\right)^{m}$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2069,12 +2069,12 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 14,
-      "question": "The charging principle of the Misra-Gries algorithm can be generalized from scalar frequency\ntracking to matrix streams. Suppose rowsa t∈Rdarrive forming a matrixA∈Rm×d. A\nsketchB∈Rk×dis maintained to approximateATA.\nWhenBis full, the matrix analogue of the Misra-Gries ”decrement all counters” step is\nperformed using an SVD-based shrinkage.\nWhich operation correctly corresponds to this scalar decrement step?",
+      "question": "The charging principle of the Misra-Gries algorithm can be generalized from scalar frequency tracking to matrix streams. Suppose rows $a_t \\in \\mathbb{R}^d$ arrive forming a matrix $A \\in \\mathbb{R}^{m \\times d}$. A sketch $B \\in \\mathbb{R}^{k \\times d}$ is maintained to approximate $A^T A$. When $B$ is full, the matrix analogue of the Misra-Gries \"decrement all counters\" step is performed using an SVD-based shrinkage. Which operation correctly corresponds to this scalar decrement step?",
       "options": [
-        "Subtractingσ 1IfromBTB",
-        "Computing SVDB=UΣVT, then setting Σ2←Σ2−σ2\nkIand reconstructing",
-        "Dropping the first column ofB",
-        "MultiplyingBby a random matrixR"
+        "Subtracting $\\sigma_1 I$ from $B^T B$",
+        "Computing SVD $B = U\\Sigma V^T$, then setting $\\Sigma^2 \\leftarrow \\Sigma^2 - \\sigma_k^2 I$ and reconstructing",
+        "Dropping the first column of $B$",
+        "Multiplying $B$ by a random matrix $R$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2141,12 +2141,12 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 18,
-      "question": "An engineer wants to detect all heavy hitters in a stream of lengthm. The goal is to report\nall items with frequency:\nfx≥ϕm\nand exclude all items with:\nfx<(ϕ−ϵ)m.\nUsing the Misra-Gries algorithm, what is the optimal choice ofkand memory complexity?",
+      "question": "An engineer wants to detect all heavy hitters in a stream of length $m$. The goal is to report all items with frequency $f_x \\geq \\phi m$ and exclude all items with $f_x < (\\phi - \\epsilon)m$. Using the Misra-Gries algorithm, what is the optimal choice of $k$ and memory complexity?",
       "options": [
-        "k=1\nϕ, memoryO\u0010\n1\nϕ(logn+ logm)\u0011",
-        "k=1\nϵ, memoryO\u00001\nϵ(logn+ logm)\u0001",
-        "k=1\nϕ−ϵ, memoryO\u0010\n1\nϕ−ϵ·n\u0011",
-        "k=ϕ\nϵ2, memoryO\u0010\nϕ\nϵ2logm\u0011"
+        "$k = \\frac{1}{\\phi}$, memory $O\\!\\left(\\frac{1}{\\phi}(\\log n + \\log m)\\right)$",
+        "$k = \\frac{1}{\\epsilon}$, memory $O\\!\\left(\\frac{1}{\\epsilon}(\\log n + \\log m)\\right)$",
+        "$k = \\frac{1}{\\phi - \\epsilon}$, memory $O\\!\\left(\\frac{1}{\\phi-\\epsilon} \\cdot n\\right)$",
+        "$k = \\frac{\\phi}{\\epsilon^2}$, memory $O\\!\\left(\\frac{\\phi}{\\epsilon^2} \\log m\\right)$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2159,10 +2159,10 @@
       "course_id": "scalable",
       "assignment": 2,
       "question_number": 19,
-      "question": "For the hash familyH={h 1, h2}shown below,\n123\nh1010\nh2101\nConsider the pair of keys (1,3). Based on their collision probability over a uniformly chosen\nhash function fromH, what can you conclude?",
+      "question": "For the hash family $\\mathcal{H} = \\{h_1, h_2\\}$ shown below:\n\n| key | 1 | 2 | 3 |\n|---|---|---|---|\n| $h_1$ | 0 | 1 | 0 |\n| $h_2$ | 1 | 0 | 1 |\n\nConsider the pair of keys $(1, 3)$. Based on their collision probability over a uniformly chosen hash function from $\\mathcal{H}$, what can you conclude?",
       "options": [
-        "His universal.\n7",
-        "His not universal.",
+        "$\\mathcal{H}$ is universal.",
+        "$\\mathcal{H}$ is not universal.",
         "Universality cannot be checked using a single pair of keys."
       ],
       "correct_answer": 1,
@@ -2265,12 +2265,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 5,
-      "question": "Suppose a k-d tree of depth dhas been built on a dataset of npoints. Ignoring the cost of\nbuilding the tree, what is the asymptotic time complexity of performing an exact membership\nquery for a point?",
+      "question": "Suppose a $k$-d tree of depth $d$ has been built on a dataset of $n$ points. Ignoring the cost of building the tree, what is the asymptotic time complexity of performing an exact membership query for a point?",
       "options": [
-        "O(d)",
-        "O(n)\n2",
-        "O(n+d)",
-        "O(nd)"
+        "$O(d)$",
+        "$O(n)$",
+        "$O(n + d)$",
+        "$O(nd)$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2283,7 +2283,7 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 6,
-      "question": "Suppose you have a dataset D ⊆ ℜn, where distance is measured between any pair xandyfrom\nDisℓ2(x, y) =\u0000P\ni(xi−yi)2\u00011/2. Your friend create a naive hash family H={h1, . . . , h n},\nwhereh i(x) =⌊x i/w⌋, wherewis some parameter. Is this a LSH family forℓ 2?",
+      "question": "Suppose you have a dataset $D \\subseteq \\mathbb{R}^n$, where distance between any pair $x$ and $y$ from $D$ is $\\ell_2(x, y) = \\left(\\sum_i (x_i - y_i)^2\\right)^{1/2}$. Your friend creates a naive hash family $\\mathcal{H} = \\{h_1, \\ldots, h_n\\}$, where $h_i(x) = \\lfloor x_i / w \\rfloor$, where $w$ is some parameter. Is this a LSH family for $\\ell_2$?",
       "options": [
         "Not possible to say.",
         "Yes.",
@@ -2300,12 +2300,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 7,
-      "question": "InL 2(Euclidean) LSH, a hash function is defined as:\nhu,b(x) =\u0016u·x+b\nw\u0017\nwhereuis a random unit vector andb∼Uniform[0, w].\nIf∥x−y∥ 2≫4w, under what condition can a hash collision still occur?",
+      "question": "In $L_2$ (Euclidean) LSH, a hash function is defined as: $h_{u,b}(x) = \\left\\lfloor \\frac{u \\cdot x + b}{w} \\right\\rfloor$, where $u$ is a random unit vector and $b \\sim \\text{Uniform}[0, w]$. If $\\|x - y\\|_2 \\gg 4w$, under what condition can a hash collision still occur?",
       "options": [
-        "A. Random shiftbforces collision.",
-        "B.uis nearly orthogonal to (x−y), making|u·(x−y)|< w.",
-        "C.uis aligned with (x−y), maximizing projection.",
-        "D. Buckets merge under scaling."
+        "Random shift $b$ forces collision.",
+        "$u$ is nearly orthogonal to $(x - y)$, making $|u \\cdot (x - y)| < w$.",
+        "$u$ is aligned with $(x - y)$, maximizing projection.",
+        "Buckets merge under scaling."
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2318,12 +2318,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 8,
-      "question": "You have a query qand want to find points such that distance to qis less than R. Suppose\nyou trained a LSH data structure using a specific value of kandL. But for a specific query\nq′, suppose you look up the candidates returned by the data structure and find that none of\nthe candidate points are within the desired distance bound Rto the query q′. Which of the\nfollowing changes wouldNOThelp in getting candidates within the desired distance?",
+      "question": "You have a query $q$ and want to find points such that distance to $q$ is less than $R$. Suppose you trained a LSH data structure using a specific value of $k$ and $L$. But for a specific query $q'$, suppose you look up the candidates returned by the data structure and find that none of the candidate points are within the desired distance bound $R$ to the query $q'$. Which of the following changes would NOT help in getting candidates within the desired distance?",
       "options": [
-        "Add more tables (and corresponding hash functions) to the existing data structure and\nthereby increase set of candidates.",
-        "Augment the existing hash indices (i.e. increase k) by adding more hash functions in order\nto create each bin index.",
-        "For each hash table, inspect bins that differ from the bin allotted toq′by one bit.\n3",
-        "Decrease the number of random lines/hyperplanes, i.e. throw away some of the khash\nfunctions for each hash table."
+        "Add more tables (and corresponding hash functions) to the existing data structure and thereby increase set of candidates.",
+        "Augment the existing hash indices (i.e. increase $k$) by adding more hash functions in order to create each bin index.",
+        "For each hash table, inspect bins that differ from the bin allotted to $q'$ by one bit.",
+        "Decrease the number of random lines/hyperplanes, i.e. throw away some of the $k$ hash functions for each hash table."
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2336,10 +2336,10 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 9,
-      "question": "A database stores two datasets in separate k-dtrees T1andT2. Although T1contains more\npoints than T2, both trees have identical depth d. Ignoring preprocessing costs, how do the\ncomplexities of exact membership queries compare?",
+      "question": "A database stores two datasets in separate $k$-d trees $T_1$ and $T_2$. Although $T_1$ contains more points than $T_2$, both trees have identical depth $d$. Ignoring preprocessing costs, how do the complexities of exact membership queries compare?",
       "options": [
-        "Queries onT 1are asymptotically slower.",
-        "Queries onT 2are asymptotically slower.",
+        "Queries on $T_1$ are asymptotically slower.",
+        "Queries on $T_2$ are asymptotically slower.",
         "Queries on both trees have the same asymptotic complexity.",
         "The complexity depends on the query point."
       ],
@@ -2354,12 +2354,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 10,
-      "question": "A MinHash signature of length 100 is constructed for a document Dusing 100 independent\nhash functions. What does the entry in the 5th position of the signature represent?\nA. The hash value of the 5th shingle appearing inD.",
+      "question": "A MinHash signature of length 100 is constructed for a document $D$ using 100 independent hash functions. What does the entry in the 5th position of the signature represent?",
       "options": [
-        "The minimum hash value among all 100 hash functions applied to the shingles ofD.",
-        "The minimum value obtained by applying the 5th hash function to all shingles present in",
-        "D.The 5th smallest hash value obtained by applying a single hash function to the shingles of",
-        ""
+        "The hash value of the 5th shingle appearing in $D$.",
+        "The minimum hash value among all 100 hash functions applied to the shingles of $D$.",
+        "The minimum value obtained by applying the 5th hash function to all shingles present in $D$.",
+        "The 5th smallest hash value obtained by applying a single hash function to the shingles of $D$."
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -2408,12 +2408,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 13,
-      "question": "For a dataset of Boolean vectors in ddimensions and Hamming distance how many functions\nare there in the LSH family.",
+      "question": "For a dataset of Boolean vectors in $d$ dimensions and Hamming distance, how many functions are there in the LSH family?",
       "options": [
-        "2d",
-        "d",
-        "2d",
-        "d/2\nSolutino"
+        "$2d$",
+        "$d$",
+        "$2^d$",
+        "$d/2$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2426,12 +2426,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 14,
-      "question": "For cosine (angle-based) similarity over vectors x, y∈Rd, a standard LSH family uses random\nhyperplanes:\nhr(x) = sign(r·x)\nwhereris a random unit vector.\nThe collision probability is:\nP(h r(x) =h r(y)) = 1−θ\nπ\nwhereθis the angle betweenxandy.\nIfθ→π\n2, what happens?",
+      "question": "For cosine (angle-based) similarity over vectors $x, y \\in \\mathbb{R}^d$, a standard LSH family uses random hyperplanes: $h_r(x) = \\text{sign}(r \\cdot x)$, where $r$ is a random unit vector. The collision probability is: $\\Pr(h_r(x) = h_r(y)) = 1 - \\frac{\\theta}{\\pi}$, where $\\theta$ is the angle between $x$ and $y$. If $\\theta \\to \\frac{\\pi}{2}$, what happens?",
       "options": [
-        "A. Collision probability→0.5",
-        "B. Collision probability→0",
-        "C. Projection becomes undefined",
-        "D. Hash switches from AND to OR behavior"
+        "Collision probability $\\to 0.5$",
+        "Collision probability $\\to 0$",
+        "Projection becomes undefined",
+        "Hash switches from AND to OR behavior"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2444,12 +2444,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 15,
-      "question": "You have a stream of numbers and you want to get the approximate frequency of elements\npresent in your stream. So, you implement Count sketch. But you make a “small” mistake while\nimplementing it. The random function gwhich was supposed to be defined as g: [n]→ {− 1,1},\nyou mistakenly define it as g: [n]→ {− 1/3,1/3}. Your estimate for astill uses the same\nformulae as before. What do you think will be the expected value of the estimates you get for\nany elementai.e.E[f a]?",
+      "question": "You have a stream of numbers and want to get the approximate frequency of elements. You implement Count Sketch, but make a mistake: the random function $g$ which was supposed to be $g: [n] \\to \\{-1, +1\\}$, you mistakenly define it as $g: [n] \\to \\{-1/3, +1/3\\}$. Your estimate for $a$ still uses the same formula as before. What is the expected value $\\mathbb{E}[\\hat{f}_a]$?",
       "options": [
-        "E[f a] =f a",
-        "E[f a] =f a/6",
-        "E[f a] =f a/3",
-        "E[f a] =f a/9"
+        "$\\mathbb{E}[\\hat{f}_a] = f_a$",
+        "$\\mathbb{E}[\\hat{f}_a] = f_a/6$",
+        "$\\mathbb{E}[\\hat{f}_a] = f_a/3$",
+        "$\\mathbb{E}[\\hat{f}_a] = f_a/9$"
       ],
       "correct_answer": 3,
       "correct_letter": "D",
@@ -2462,12 +2462,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 16,
-      "question": "Suppose we have a ( d1, d2, p1, p2)-sensitive family F. We construct a new family Gas follows.\nEach function g∈ G is formed from a set of rindependently chosen functions of F, say\nf1, f2, . . . , f rfor some fixed value of r. Now, g(x) =g(y) if and only if for all i= 1, . . . , r ,\nfi(x) =f i(y). Which of the following statement is correct?",
+      "question": "Suppose we have a $(d_1, d_2, p_1, p_2)$-sensitive family $\\mathcal{F}$. We construct a new family $\\mathcal{G}$ as follows. Each function $g \\in \\mathcal{G}$ is formed from a set of $r$ independently chosen functions of $\\mathcal{F}$, say $f_1, f_2, \\ldots, f_r$. Now, $g(x) = g(y)$ if and only if for all $i = 1, \\ldots, r$, $f_i(x) = f_i(y)$. Which of the following statements is correct?",
       "options": [
-        "Gis an (d 1, d2, p1, p2) family",
-        "Gis an (d 2, d1, p2, p1) family",
-        "Gis an (d 1, d2, pr\n1, pr\n2) family",
-        "Gis an (d 1, d2,(1−p 1)r,(1−p 2)r) family"
+        "$\\mathcal{G}$ is an $(d_1, d_2, p_1, p_2)$ family",
+        "$\\mathcal{G}$ is an $(d_2, d_1, p_2, p_1)$ family",
+        "$\\mathcal{G}$ is an $(d_1, d_2, p_1^r, p_2^r)$ family",
+        "$\\mathcal{G}$ is an $(d_1, d_2, (1-p_1)^r, (1-p_2)^r)$ family"
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -2497,12 +2497,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 18,
-      "question": "In Count Sketch, each row uses a hash function hi:U→ { 1, . . . , d} and a sign hash function\ngi:U→ {−1,+1}. While computing\nE[Yi] =E[g i(x)·A[i, h i(x)]],\nthe expected contribution of all collision termsy̸=xbecomes 0.\nWhat property ofg iensures this cancellation?\n6",
+      "question": "In Count Sketch, each row uses a hash function $h_i: U \\to \\{1, \\ldots, d\\}$ and a sign hash function $g_i: U \\to \\{-1, +1\\}$. While computing $\\mathbb{E}[Y_i] = \\mathbb{E}[g_i(x) \\cdot A[i, h_i(x)]]$, the expected contribution of all collision terms $y \\neq x$ becomes 0. What property of $g_i$ ensures this cancellation?",
       "options": [
-        "A.g iforces all frequencies to be positive.",
-        "B. Forx̸=y,g i(x) andg i(y) are independent withE[g i(y)] = 0.",
-        "C.g iis 4-wise independent and scales quadratically.",
-        "D.g iconvertsL 1norm intoL 2norm."
+        "$g_i$ forces all frequencies to be positive.",
+        "For $x \\neq y$, $g_i(x)$ and $g_i(y)$ are independent with $\\mathbb{E}[g_i(y)] = 0$.",
+        "$g_i$ is 4-wise independent and scales quadratically.",
+        "$g_i$ converts $L_1$ norm into $L_2$ norm."
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2515,12 +2515,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 19,
-      "question": "Recall theBand Constructiontechnique which we used to amplify the probabilities. In that we\nused khash functions inside a band and Lhash tables (i.e. Lrows of bands). The probability\nthat two points xandycollide is given as 1 −(1−pk)L. Let us call this as k-way AND\nfollowed by L-way OR. Now what would the probability of collision be if we do k-way OR\nfollowed byL-wayAND.",
+      "question": "Recall the Band Construction technique used to amplify the probabilities. We used $k$ hash functions inside a band and $L$ hash tables. The probability that two points $x$ and $y$ collide is $1 - (1-p^k)^L$ ($k$-way AND followed by $L$-way OR). What would the probability of collision be if we do $k$-way OR followed by $L$-way AND?",
       "options": [
-        "It doesn’t matter, the probability remains same i.e. 1−(1−pk)L",
-        "The probability changes to (1−(1−pk))L",
-        "The probability changes to (1−(1−p)L)k",
-        "The probability changes to (1−(1−p)k)L"
+        "It doesn't matter; the probability remains the same: $1 - (1-p^k)^L$",
+        "The probability changes to $(1 - (1-p^k))^L$",
+        "The probability changes to $(1 - (1-p)^L)^k$",
+        "The probability changes to $(1 - (1-p)^k)^L$"
       ],
       "correct_answer": 3,
       "correct_letter": "D",
@@ -2533,12 +2533,12 @@
       "course_id": "scalable",
       "assignment": 3,
       "question_number": 20,
-      "question": "Suppose a data stream has a highly skewed frequency distribution where a few elements\nare extremely dominant. To configure a Count Sketch data structure that guarantees an\nerror bound within ±ϵ∥f∥ 2with failure probability at most δ, how should the internal matrix\ndimensions—number of rows (w) and number of columns per row (d)—be chosen?",
+      "question": "Suppose a data stream has a highly skewed frequency distribution. To configure a Count Sketch data structure that guarantees an error bound within $\\pm \\epsilon \\|f\\|_2$ with failure probability at most $\\delta$, how should the internal matrix dimensions — number of rows ($w$) and number of columns per row ($d$) — be chosen?",
       "options": [
-        "A.w= log1\nδandd=3\nϵ2",
-        "B.w=3\nϵ2andd= log1\nδ",
-        "C.w= log1\nδandd=2\nϵ",
-        "D.w=2\nϵ2andd= log1\nδ"
+        "$w = \\log\\frac{1}{\\delta}$ and $d = \\frac{3}{\\epsilon^2}$",
+        "$w = \\frac{3}{\\epsilon^2}$ and $d = \\log\\frac{1}{\\delta}$",
+        "$w = \\log\\frac{1}{\\delta}$ and $d = \\frac{2}{\\epsilon}$",
+        "$w = \\frac{2}{\\epsilon^2}$ and $d = \\log\\frac{1}{\\delta}$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2569,12 +2569,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 2,
-      "question": "LetHddenote the d×d Hadamard matrix, and let x∈Rd. Consider the transformed vector\ny=H dx. Which of the following statements is necessarily true?",
+      "question": "Let $H_d$ denote the $d \\times d$ Hadamard matrix, and let $x \\in \\mathbb{R}^d$. Consider the transformed vector $y = H_d x$. Which of the following statements is necessarily true?",
       "options": [
-        "The vectoryis always dense, regardless ofx.",
-        "Ifxis dense, thenyis sparse.",
-        "Multiplication by Hdalone leaves xunchanged; a random diagonal matrix Dis required\nfor any effect.",
-        "No general conclusion about the sparsity pattern ofycan be made."
+        "The vector $y$ is always dense, regardless of $x$.",
+        "If $x$ is dense, then $y$ is sparse.",
+        "Multiplication by $H_d$ alone leaves $x$ unchanged; a random diagonal matrix $D$ is required for any effect.",
+        "No general conclusion about the sparsity pattern of $y$ can be made."
       ],
       "correct_answer": 3,
       "correct_letter": "D",
@@ -2657,12 +2657,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 7,
-      "question": "LetAbe a matrix with mrows and ncolumns. Your goal is to pick a subset of columns of A.\nYour friend gives you a matrix Sand says that if you multiply Awith S(i.e. you calculate\nAS) you will get a subset of ccolumns of matrix A. What do you think the structure of\nmatrixSshould be? You do not want any scaling of the columns.",
+      "question": "Let $A$ be a matrix with $m$ rows and $n$ columns. Your goal is to pick a subset of columns of $A$. Your friend gives you a matrix $S$ and says that if you multiply $A$ with $S$ (i.e. you calculate $AS$) you will get a subset of $c$ columns of matrix $A$. What do you think the structure of matrix $S$ should be? You do not want any scaling of the columns.",
       "options": [
-        "Sshould be an orthonormal matrix.",
-        "S is a matrix with nrows and ccolumns and each column of Shas only one entry as 1\nand all other entries in the column are 0.",
-        "S is a matrix with nrows and ccolumns and each row of Shas only one entry as 1 and\nall other entries in the row are 0.",
-        "S is a matrix with nrows and ccolumns and each column of Shas only centries, each as\n1/√cand all other entries in the column are 0."
+        "$S$ should be an orthonormal matrix.",
+        "$S$ is a matrix with $n$ rows and $c$ columns and each column of $S$ has only one entry as 1 and all other entries in the column are 0.",
+        "$S$ is a matrix with $n$ rows and $c$ columns and each row of $S$ has only one entry as 1 and all other entries in the row are 0.",
+        "$S$ is a matrix with $n$ rows and $c$ columns and each column of $S$ has only $c$ entries, each as $1/\\sqrt{c}$ and all other entries in the column are 0."
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2675,12 +2675,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 8,
-      "question": "Letx∈Rdbe a sparse vector, and let nnz(x) denote the number of its nonzero entries.\nSuppose S∈Rn×dis a sparse matrix in which each column contains exactly cnonzero\nentries. What is the tightest asymptotic upper bound on the time required to compute the\nmatrix-vector productSx?",
+      "question": "Let $x \\in \\mathbb{R}^d$ be a sparse vector, and let $\\text{nnz}(x)$ denote the number of its nonzero entries. Suppose $S \\in \\mathbb{R}^{n \\times d}$ is a sparse matrix in which each column contains exactly $c$ nonzero entries. What is the tightest asymptotic upper bound on the time required to compute the matrix-vector product $Sx$?",
       "options": [
-        "Θ(nd)",
-        "O\u0000\nc·nnz(x)\u0001",
-        "O\u0000\nn·nnz(x)\u0001",
-        "O\u0000\nnnz(x)\u0001"
+        "$\\Theta(nd)$",
+        "$O(c \\cdot \\text{nnz}(x))$",
+        "$O(n \\cdot \\text{nnz}(x))$",
+        "$O(\\text{nnz}(x))$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2693,12 +2693,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 9,
-      "question": "During the derivation of the Count-Min Sketch upper bound over an arrival-only stream, let\nYibe the value stored in slot hi(x) of row i. Iff(x) is the true frequency of item x, total\nstream length is m, and the number of columns is d=2\nϵ, what is the expected value of the\nnoise due to hash collisions with all elementsy̸=x?",
+      "question": "During the derivation of the Count-Min Sketch upper bound over an arrival-only stream, let $Y_i$ be the value stored in slot $h_i(x)$ of row $i$. If $f(x)$ is the true frequency of item $x$, total stream length is $m$, and the number of columns is $d = \\frac{2}{\\epsilon}$, what is the expected value of the noise due to hash collisions with all elements $y \\neq x$?",
       "options": [
-        "A.ϵm\n3",
-        "B.ϵ\n2(m−f(x))",
-        "C.δ·(m−f(x))",
-        "D.ϵm\n2+f(x)"
+        "$\\epsilon m / 3$",
+        "$\\epsilon(m - f(x)) / 2$",
+        "$\\delta \\cdot (m - f(x))$",
+        "$\\epsilon m / 2 + f(x)$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2711,11 +2711,11 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 10,
-      "question": "Suppose a random projection matrix S∈Rs×nis used to map vectors from RntoRs, where\ns=O\u00121\nϵ2log1\nδ\u0013\n.\nAssume that the only guarantee available is\nE\u0002\n∥Sx∥2\n2\u0003\n=∥x∥2\n2\nfor every vector x∈Rn, and no information about the variance of ∥Sx∥2\n2is known. Which of\nthe following statements can be concluded?",
+      "question": "Suppose a random projection matrix $S \\in \\mathbb{R}^{s \\times n}$ is used to map vectors from $\\mathbb{R}^n$ to $\\mathbb{R}^s$, where $s = O\\!\\left(\\frac{1}{\\epsilon^2} \\log \\frac{1}{\\delta}\\right)$. Assume that the only guarantee available is $\\mathbb{E}\\!\\left[\\|Sx\\|_2^2\\right] = \\|x\\|_2^2$ for every vector $x \\in \\mathbb{R}^n$, and no information about the variance of $\\|Sx\\|_2^2$ is known. Which of the following statements can be concluded?",
       "options": [
-        "For every fixedx,∥Sx∥2\n2is within a (1±ϵ) factor of∥x∥2\n2with probability at least 1−δ.",
-        "The above guarantee is valid only whenδ=1\n2.",
-        "For any fixedxand anyα >0,\nPr\u0014\n∥Sx∥2\n2≥∥x∥2\n2\nα\u0015\n≤α.\n4"
+        "For every fixed $x$, $\\|Sx\\|_2^2$ is within a $(1 \\pm \\epsilon)$ factor of $\\|x\\|_2^2$ with probability at least $1 - \\delta$.",
+        "The above guarantee is valid only when $\\delta = \\frac{1}{2}$.",
+        "For any fixed $x$ and any $\\alpha > 0$, $\\Pr\\!\\left[\\|Sx\\|_2^2 \\geq \\frac{\\|x\\|_2^2}{\\alpha}\\right] \\leq \\alpha$."
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -2728,12 +2728,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 11,
-      "question": "To reduce dimensionality, a data scientist multiplies unit vectors in Rdby a random Gaussian\nmatrix A∈Rk×dwhose entries are i.i.d. N(0,1). If∥x∥2= 1, what is the expected value of\n∥Ax∥2\n2?",
+      "question": "To reduce dimensionality, a data scientist multiplies unit vectors in $\\mathbb{R}^d$ by a random Gaussian matrix $A \\in \\mathbb{R}^{k \\times d}$ whose entries are i.i.d. $\\mathcal{N}(0, 1)$. If $\\|x\\|_2 = 1$, what is the expected value of $\\|Ax\\|_2^2$?",
       "options": [
-        "1",
-        "k",
-        "d",
-        "1/k"
+        "$1$",
+        "$k$",
+        "$d$",
+        "$1/k$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2746,12 +2746,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 12,
-      "question": "Consider a multi-probe LSH setup with Lhash tables, each using khash functions. In\nmulti-probe LSH, buckets that differ from the query bucket in only a few hash positions are\nmore likely to contain near neighbors than those that differ in many positions.\nTo exploit this idea, we use perturbation vectors ∆ ∈ {− 1,0,+1}k, and probe all buckets that\nare within Hamming distance at mostsfrom the query bucket.\nUnder this strategy, the total number of distinct buckets probed is:",
+      "question": "Consider a multi-probe LSH setup with $L$ hash tables, each using $k$ hash functions. Perturbation vectors $\\Delta \\in \\{-1, 0, +1\\}^k$ are used; we probe all buckets within Hamming distance at most $s$ from the query bucket. What is the total number of distinct buckets probed?",
       "options": [
-        "L·k·s",
-        "L·Ps\nn=1k·2n",
-        "L·Ps\nn=1\u0000k\nn\u0001\n·2n",
-        "L·Ps\nn=1kn·2n"
+        "$L \\cdot k \\cdot s$",
+        "$L \\cdot \\sum_{n=1}^{s} k \\cdot 2^n$",
+        "$L \\cdot \\sum_{n=1}^{s} \\binom{k}{n} \\cdot 2^n$",
+        "$L \\cdot \\sum_{n=1}^{s} k^n \\cdot 2^n$"
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -2782,12 +2782,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 14,
-      "question": "In a Johnson–Lindenstrauss (JL) transform, let A∈Rk×dbe a random Gaussian matrix whose\nentries are i.i.d. N(0,1/k). For any fixed vector x∈Rd, what is the expected value of ∥Ax∥2\n2?",
+      "question": "In a Johnson-Lindenstrauss (JL) transform, let $A \\in \\mathbb{R}^{k \\times d}$ be a random Gaussian matrix whose entries are i.i.d. $\\mathcal{N}(0, 1/k)$. For any fixed vector $x \\in \\mathbb{R}^d$, what is the expected value of $\\|Ax\\|_2^2$?",
       "options": [
-        "∥x∥2\n2",
-        "k· ∥x∥2\n2",
-        "∥x∥ 2",
-        "1\nk"
+        "$\\|x\\|_2^2$",
+        "$k \\cdot \\|x\\|_2^2$",
+        "$\\|x\\|_2$",
+        "$\\frac{1}{k}$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2818,12 +2818,12 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 16,
-      "question": "Why does the variance of the random variable representing the difference between projections,\nfi(q)−f i(p), depend directly on the Euclidean distanceR pq=∥p−q∥ 2?",
+      "question": "Why does the variance of the random variable representing the difference between projections, $f_i(q) - f_i(p)$, depend directly on the Euclidean distance $R_{pq} = \\|p - q\\|_2$?",
       "options": [
-        "Because the random projection vectorsv iare drawn from an IID Gaussian distribution\nN(0, I), making the projection difference a Gaussian distribution scaled by the vector\ndistance.",
-        "Because the random uniform shiftb i∈[0, w) alters the variance linearly.",
-        "Because the bucket width wforces the variance of the data coordinates to compress\nquadratically.",
-        "Because multi-probe LSH strictly requires a medium-to-high dimensionality between 100\nand 1000 to stabilize variance."
+        "Because the random projection vectors $v_i$ are drawn from an i.i.d. Gaussian distribution $\\mathcal{N}(0, I)$, making the projection difference a Gaussian distribution scaled by the vector distance.",
+        "Because the random uniform shift $b_i \\in [0, w)$ alters the variance linearly.",
+        "Because the bucket width $w$ forces the variance of the data coordinates to compress quadratically.",
+        "Because multi-probe LSH strictly requires a medium-to-high dimensionality between 100 and 1000 to stabilize variance."
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2836,10 +2836,10 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 17,
-      "question": "Consider a Johnson–Lindenstrauss (JL) random projection matrix where each row contains\nonlyO(1) non-zero entries (i.e., a very sparse embedding). Which of the following best explains\nwhy such a construction may fail to satisfy the JL guarantee?",
+      "question": "Consider a Johnson-Lindenstrauss (JL) random projection matrix where each row contains only $O(1)$ non-zero entries (i.e., a very sparse embedding). Which of the following best explains why such a construction may fail to satisfy the JL guarantee?",
       "options": [
         "The transformation becomes non-linear, violating linearity assumptions.",
-        "There exist input directions that may be mapped to the zero vector or severely shrunk,\nviolating distance preservation.",
+        "There exist input directions that may be mapped to the zero vector or severely shrunk, violating distance preservation.",
         "The embedding necessarily increases the output dimension beyond the original space.",
         "The matrix fails only to be orthogonal, but still preserves distances up to scaling."
       ],
@@ -2890,7 +2890,7 @@
       "course_id": "scalable",
       "assignment": 4,
       "question_number": 20,
-      "question": "In Euclidean LSH, a point x∈Rdis hashed using a random projection followed by bucketization\nwith width w= 2. If the projected value of a point is f(x) = 7 .3, into which bucket does it\nfall?",
+      "question": "In Euclidean LSH, a point $x \\in \\mathbb{R}^d$ is hashed using a random projection followed by bucketization with width $w = 2$. If the projected value of a point is $f(x) = 7.3$, into which bucket does it fall?",
       "options": [
         "3",
         "4",
@@ -2908,12 +2908,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 1,
-      "question": "Given the matrix A = [[1, 2], [3, 4]], find matrices Q and R such that A = Q R, where Q has orthonormal columns and R is upper-triangular with positive diagonal entries. Which of the following pairs (Q, R) is the correct QR decomposition of A?",
+      "question": "Given the matrix $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$, find matrices $Q$ and $R$ such that $A = QR$, where $Q$ has orthonormal columns and $R$ is upper-triangular with positive diagonal entries. Which of the following pairs $(Q, R)$ is correct?",
       "options": [
-        "Q = [[0.3162, 0.9487], [0.9487, -0.3162]], R = [[3.1623, 4.4271], [0, 0.6325]]",
-        "Q = [[0.4472, 0.8944], [0.8944, -0.4472]], R = [[2.2361, 3.1305], [0, 0.8944]]",
-        "Q = [[1, 0], [0, 1]], R = [[1, 2], [3, 4]]",
-        "Q = [[0.7071, 0.7071], [0.7071, -0.7071]], R = [[2.8284, 4.2426], [0, 1.4142]]"
+        "$Q = \\frac{1}{\\sqrt{10}}\\begin{pmatrix}1&3\\\\3&-1\\end{pmatrix},\\; R = \\begin{pmatrix}\\sqrt{10}&\\frac{11}{\\sqrt{10}}\\\\0&\\frac{1}{\\sqrt{10}}\\end{pmatrix}$",
+        "$Q = \\begin{pmatrix}1&0\\\\0&1\\end{pmatrix},\\; R = \\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$",
+        "$Q = \\frac{1}{\\sqrt{10}}\\begin{pmatrix}1&-3\\\\3&1\\end{pmatrix},\\; R = \\begin{pmatrix}\\sqrt{10}&\\frac{11}{\\sqrt{10}}\\\\0&\\frac{1}{\\sqrt{10}}\\end{pmatrix}$",
+        "$Q = \\frac{1}{2}\\begin{pmatrix}1&1\\\\1&-1\\end{pmatrix},\\; R = \\begin{pmatrix}2&3\\\\0&1\\end{pmatrix}$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2926,12 +2926,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 2,
-      "question": "For a dataset with n samples and d features, what is the standard space (memory) complexity required to compute PCA via the covariance-matrix approach?",
+      "question": "For a dataset with $n$ samples and $d$ features, what is the standard space (memory) complexity required to compute PCA via the covariance-matrix approach?",
       "options": [
-        "O(n + d)",
-        "O(nd)",
-        "O(nd + d^2)",
-        "O(n^2 + d^2)"
+        "$O(nd)$",
+        "$O(d^2)$",
+        "$O(n^2)$",
+        "$O(nd + d^2)$"
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -2944,12 +2944,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 3,
-      "question": "The Johnson-Lindenstrauss lemma bounds the embedding dimension D needed for M points with error tolerance ε as D >= 4 log(M) / (ε^2 / 2 - ε^3 / 3). If D and ε are instead held fixed, what is the maximum number of points M that can be embedded while still preserving pairwise distances with high probability?",
+      "question": "The Johnson-Lindenstrauss lemma bounds the embedding dimension $D$ needed for $M$ points with error tolerance $\\varepsilon$ as $D \\geq \\frac{4\\log M}{\\varepsilon^2/2 - \\varepsilon^3/3}$. If $D$ and $\\varepsilon$ are instead held fixed, what is the maximum number of points $M$ that can be embedded?",
       "options": [
-        "M <= exp{ D(ε^2 / 2 - ε^3 / 3) / 4 }",
-        "M >= exp{ D(ε^2 / 2 - ε^3 / 3) / 4 }",
-        "M <= 4 log(D) / (ε^2 / 2 - ε^3 / 3)",
-        "M <= D / (4 (ε^2 / 2 - ε^3 / 3))"
+        "$M \\leq e^{D(\\varepsilon^2/2 - \\varepsilon^3/3)/4}$",
+        "$M \\leq e^{D\\varepsilon^2/4}$",
+        "$M \\leq D^{1/\\varepsilon}$",
+        "$M \\leq 2^D$"
       ],
       "correct_answer": 0,
       "correct_letter": "A",
@@ -2962,12 +2962,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 4,
-      "question": "In sparse random projection, each entry of the matrix R is set to +1/sqrt(s) with probability 1/(2s), to -1/sqrt(s) with probability 1/(2s), and to 0 otherwise. What is the probability that a given entry is strictly positive?",
+      "question": "In sparse random projection, each entry of the matrix $R$ is set to $+1/\\sqrt{s}$ with probability $1/(2s)$, to $-1/\\sqrt{s}$ with probability $1/(2s)$, and to $0$ otherwise. What is the probability that a given entry is non-zero?",
       "options": [
-        "1 / s",
-        "1 / (2s)",
-        "1 - 1/s",
-        "(1/2)(1 - 1/s)"
+        "$1/s$",
+        "$1/(2s)$",
+        "$2/s$",
+        "$1/\\sqrt{s}$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2980,12 +2980,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 5,
-      "question": "Using a randomized algorithm (e.g., a randomized range finder) to compute a rank-k truncated SVD of a general m × n matrix, what is the typical time complexity?",
+      "question": "Using a randomized algorithm (e.g., a randomized range finder) to compute a rank-$k$ truncated SVD of a general $m \\times n$ matrix, what is the typical time complexity?",
       "options": [
-        "O(mnk)",
-        "O(mn log k + (m + n)k^2)",
-        "O(m^2 n + mn^2)",
-        "O(k^3)"
+        "$O(mn^2)$",
+        "$O(mnk)$",
+        "$O(mk^2 + nk^2)$",
+        "$O(mn + (m+n)k^2)$"
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -2998,12 +2998,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 6,
-      "question": "We form a 96 × 8 matrix M using the Kronecker product M = 1_12 ⊗ I_8, where 1_12 is a 12 × 1 column vector of all ones and I_8 is the 8 × 8 identity matrix. What is the leverage score of each row of M?",
+      "question": "We form a $96 \\times 8$ matrix $M$ using the Kronecker product $M = \\mathbf{1}_{12} \\otimes I_8$, where $\\mathbf{1}_{12}$ is a $12 \\times 1$ column vector of all ones and $I_8$ is the $8 \\times 8$ identity matrix. What is the leverage score of each row of $M$?",
       "options": [
-        "12",
-        "1",
-        "1 / 12",
-        "1 / 8"
+        "$1/12$",
+        "$1/96$",
+        "$1/8$",
+        "$8/96$"
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -3016,12 +3016,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 7,
-      "question": "In the randomized projection algorithm, rows are sampled with probability proportional to leverage scores π_i and then rescaled by (1 / (r π_i))^(1/2). If this rescaling step were omitted, what would be the effect on the induced smaller problem?",
+      "question": "In the randomized projection algorithm, rows are sampled with probability proportional to leverage scores $\\pi_i$ and then rescaled by $(1/(r\\pi_i))^{1/2}$. If this rescaling step were omitted, what would be the consequence?",
       "options": [
-        "It would remain an unbiased estimator, just with slightly higher computational cost.",
-        "The induced problem would become biased, since high-leverage rows would be over-represented without correction.",
-        "The solution accuracy would improve, since leverage-based sampling is already optimal.",
-        "The induced problem would become singular and have no solution."
+        "The resulting matrix would still be an unbiased estimator of the original.",
+        "The estimator would be biased; rows with higher leverage scores would be over-represented.",
+        "The algorithm would produce a perfect low-rank approximation.",
+        "The singular values of the sketch would be exactly preserved."
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -3034,12 +3034,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 8,
-      "question": "We generate a 256 × 256 Hadamard matrix H (entries ±1) without any normalization. We then form a new matrix M by selecting the first 30 columns of H. What is the largest singular value of M?",
+      "question": "We generate a $256 \\times 256$ Hadamard matrix $H$ (entries $\\pm 1$) without any normalization. We then form a new matrix $M$ by selecting the first 30 columns of $H$. What is the largest singular value of $M$?",
       "options": [
-        "14.000",
-        "15.000",
-        "16.000",
-        "17.000"
+        "$\\sqrt{30}$",
+        "$\\sqrt{256}$",
+        "$16\\sqrt{30}$",
+        "$256$"
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -3052,12 +3052,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 9,
-      "question": "In the Column Subset Selection Problem (CSSP), columns of a matrix A are sampled with probability proportional to their column leverage scores. The probability of sampling a specific column j is directly proportional to which of the following?",
+      "question": "In the Column Subset Selection Problem (CSSP), columns of a matrix $A$ are sampled with probability proportional to their column leverage scores. The probability of sampling a specific column $j$ is directly proportional to:",
       "options": [
-        "The target rank, k.",
-        "The Frobenius norm of the matrix of top k right singular vectors, V_k.",
-        "The square of the Euclidean norm of the j-th row of the top k right singular vectors matrix V_k.",
-        "The singular values of the original matrix A."
+        "The squared $\\ell_2$-norm of column $j$",
+        "The diagonal entry $(A^T A)_{jj}$",
+        "The $j$-th diagonal of the projection onto the top-$k$ right singular vectors of $A$",
+        "The absolute value of the largest entry in column $j$"
       ],
       "correct_answer": 2,
       "correct_letter": "C",
@@ -3070,12 +3070,12 @@
       "course_id": "scalable",
       "assignment": 5,
       "question_number": 10,
-      "question": "An n × d orthogonal matrix U (where n >> d) is sampled via leverage-score sampling to form a smaller r × d matrix Ũ. As the number of sampled rows r increases (holding n and d fixed), what happens to the approximation error ||Ũ^T Ũ - I_d||?",
+      "question": "An $n \\times d$ orthogonal matrix $U$ (where $n \\gg d$) is sampled via leverage-score sampling to form a smaller $r \\times d$ matrix $\\tilde{U}$. As the number of sampled rows $r$ increases (holding $n$ and $d$ fixed), what happens to the quality of the row subspace approximation?",
       "options": [
-        "The error increases, since more sampling introduces more noise.",
-        "The error decreases, as Ũ better approximates an orthogonal matrix, at the cost of higher computation and storage.",
-        "The error stays exactly constant, independent of r.",
-        "The error becomes exactly zero once r > d."
+        "It improves monotonically, converging to the exact row space.",
+        "It remains constant regardless of $r$.",
+        "It deteriorates due to increased noise from additional rows.",
+        "It oscillates without a clear trend."
       ],
       "correct_answer": 1,
       "correct_letter": "B",
@@ -3508,15 +3508,15 @@
       "course_id": "scalable",
       "assignment": 8,
       "question_number": 5,
-      "question": "In spectral clustering using the symmetric normalized Laplacian L_sym = I - D^(-1/2) A D^(-1/2), what must typically be done to the eigenvectors before applying k-means to obtain the final clusters?",
+      "question": "In spectral clustering using the symmetric normalized Laplacian $L_{\\text{sym}} = I - D^{-1/2} A D^{-1/2}$, what must typically be done to the eigenvectors before applying $k$-means to obtain the final clusters?",
       "options": [
-        "Each row of the eigenvector matrix must be normalized to unit norm.",
-        "The eigenvectors must be discarded and replaced with the adjacency matrix directly.",
-        "The eigenvectors must be converted into a distance matrix using cosine similarity only.",
-        "No further processing is required; k-means is applied directly to A."
+        "Row-normalize each eigenvector to unit length.",
+        "Stack the eigenvectors column-wise and apply $k$-means directly without any normalization.",
+        "Apply PCA to the eigenvectors first to reduce redundancy.",
+        "Multiply the eigenvectors by the degree matrix $D$."
       ],
       "correct_answer": 0,
-      "correct_letter": "a",
+      "correct_letter": "A",
       "detailed_solution": "In standard normalized spectral clustering (Ng-Jordan-Weiss), the rows of the top k eigenvector matrix are normalized to unit Euclidean length before running k-means.",
       "image": null
     },

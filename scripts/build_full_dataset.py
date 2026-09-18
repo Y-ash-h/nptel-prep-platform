@@ -1525,10 +1525,37 @@ def main():
         "questions": total_questions
     }
 
+    # --- Validation: ensure all correct_answer fields are integers ---
+    bad_questions = [
+        q for q in total_questions if not isinstance(q.get("correct_answer"), int)
+    ]
+    if bad_questions:
+        for bq in bad_questions:
+            print(f"  [ERROR] Non-integer correct_answer in {bq['id']}: {repr(bq['correct_answer'])}")
+        raise ValueError(
+            f"{len(bad_questions)} question(s) have non-integer correct_answer. "
+            "Fix these before writing output."
+        )
+    print(f"Validation passed: all {len(total_questions)} questions have integer correct_answer.")
+
+    # Write src/data/questions.json (build output)
     output_path = "src/data/questions.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"Successfully saved question bank to {output_path}!")
+
+    # Write data/questions.js (live app file consumed by index.html)
+    js_output_path = "data/questions.js"
+    js_content = "window.QUESTIONS_DATA = " + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";"
+    with open(js_output_path, "w", encoding="utf-8") as f:
+        f.write(js_content)
+    print(f"Successfully saved question bank to {js_output_path}!")
+
+    # Write data/questions.json (synced copy)
+    json_output_path = "data/questions.json"
+    with open(json_output_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"Successfully saved question bank to {json_output_path}!")
 
 if __name__ == "__main__":
     main()
