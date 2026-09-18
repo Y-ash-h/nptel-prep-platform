@@ -2933,8 +2933,8 @@
         "$O(n^2)$",
         "$O(nd + d^2)$"
       ],
-      "correct_answer": 2,
-      "correct_letter": "C",
+      "correct_answer": 3,
+      "correct_letter": "D",
       "detailed_solution": "Storing the dataset requires O(nd) memory, and storing the d × d sample covariance matrix requires O(d^2) memory. Thus total space is O(nd + d^2).",
       "image": null
     },
@@ -3077,8 +3077,8 @@
         "It deteriorates due to increased noise from additional rows.",
         "It oscillates without a clear trend."
       ],
-      "correct_answer": 1,
-      "correct_letter": "B",
+      "correct_answer": 0,
+      "correct_letter": "A",
       "detailed_solution": "By matrix concentration inequalities (e.g. Matrix Chernoff), the spectral norm error ||Ũ^T Ũ - I_d|| decreases as O(sqrt(d log d / r)) as r increases.",
       "image": null
     },
